@@ -1,4 +1,4 @@
-function openNav()
+function openSide()
 {
     
 }

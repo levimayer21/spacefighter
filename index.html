@@ -3,20 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/css/materialize.css">
+        <title>SpaceFighter</title>
+        <link rel="stylesheet" href="/css/materialize.css" type="text/css" media="screen,projection">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
     </head>
     <body>
-        <nav class="grey lighten-1" role="navigation">
+        <!-- Navbar -->
+        <nav class="grey darken-1" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="/index.html" class="brand-logo">SpaceCraft</a>
+                <a id="logo-container" href="/index.html" class="brand-logo">SpaceFighter</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="white-text waves-effect waves-light" href="/">Játék</a></li>
+                    <li><a class="white-text waves-effect waves-light" href="/sites/game.html">Játék</a></li>
                     <li><a class="white-text waves-effect waves-light">Ponttáblázat</a></li>
                 </ul>
                 <ul id="nav-mobile" class="sidenav">
-                    <li><a class="white-text" href="/">Játék</a></li>
+                    <li><a class="white-text big" href="/">Játék</a></li>
                     <li><a class="white-text">Ponttáblázat</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger">
@@ -24,6 +26,21 @@
                 </a>
             </div>
         </nav>
+        <!-- Content -->
+        <div id="playinfo" class="container">
+            <p class="center-align flow-text hide-on-med-and-down">A játékhoz kattints a felül található "Játék" gombra!</p>
+        </div>
+        <div id="content" class="container">
+            <div class="row">
+                <div class="col s6">
+                    <h3>Versenyezz!</h3>
+                    <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
+                </div>
+                <div class="col s6">
+                    <img id="starship" class="responsive-img circle" src="/img/b65os8d4.bmp" alt="urhajo.img">
+                </div>
+            </div>
+        </div>
         <!-- JS hátul optimalizációs célokból-->
         <script type="text/javascript" src="/js/materialize.js"></script>
     </body>
