@@ -3,8 +3,15 @@
     --primary: #666666;
 }
 
-#starship
+#content .row
 {
-    position: absolute;
-    image-orientation: ;
+    padding-bottom: 50px;
+}
+
+#galagapic
+{
+    display: run-in;
+    max-width: 300px;
+    max-height: 400px;
+    orientation: landscape;
 }

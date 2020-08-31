@@ -1,4 +1,5 @@
-function openSide()
+$(document).ready(function()
 {
-    
+    $('.sidenav').sidenav();
 }
+);
