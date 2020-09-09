@@ -10,8 +10,6 @@
 
 #galagapic
 {
-    display: run-in;
-    max-width: 300px;
-    max-height: 400px;
-    orientation: landscape;
+    background-image: url(/img/galagaship.png);
+    background-size: cover;
 }
