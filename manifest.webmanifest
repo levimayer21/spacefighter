@@ -1,0 +1,12 @@
+{
+    "name": "SpaceFighter",
+    "short_name": "SF",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ccc",
+    "description": "Space against you, you against Space",
+    "icons": 
+    [{
+
+    }]
+}
