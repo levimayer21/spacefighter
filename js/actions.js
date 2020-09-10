@@ -5,6 +5,5 @@ $(document).ready(function()
 }
 );
 
-window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-  }, false);
+document.documentElement.style.setProperty("--navheight", document.getElementById("spacenav").clientHeight + "px");
+document.documentElement.style.setProperty("--navwidth", document.getElementsByTagName("nav").clientWidth + "px");

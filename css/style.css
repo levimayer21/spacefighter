@@ -8,23 +8,23 @@
     padding-bottom: 50px;
 }
 
-@keyframes lefttoright
+@keyframes righttoleft
 {
-    from {translate: -2vw}
-    to {translate: 101vw;}
+    0% {-webkit-transform: translate(120vw); transform: translate(120vw);}
+    100% {-webkit-transform: translate(-50vw); transform: translate(-50vw);}
 }
+
 #galagapic
 {
-    position: relative;
-    max-height: 45px;
-    height: 16vw;
-    transform: rotate(-90deg);
-    margin-top: 1.5vw;
+    position: absolute;
+    max-height: var(--navheight);
+    /*margin-top: ;*/
     z-index: 0;
-    animation-name: lefttoright;
+    animation-name: righttoleft;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-direction: reverse;
+    animation-direction: normal;
+    animation-timing-function: linear;
 }
 
 .spacebg
@@ -36,19 +36,14 @@
 {
     #galagapic
     {
-        position: fixed;
-        height: 10vw;
-        width: auto;
-        transform: rotate(90deg);
-        margin-top: 1.5vw;
+        position: absolute;
+        max-height: var(--navheight);
+        /*margin-top: 1.5vw;*/
         z-index: 0;
-        animation-name: lefttoright;
+        animation-name: righttoleft;
         animation-duration: 6s;
         animation-iteration-count: infinite;
-    }
-    .spacebg
-    {
-        background: black;
+        animation-direction: normal;
     }
 }
 
@@ -56,18 +51,15 @@
 {
     #galagapic
     {
-        position: fixed;
-        height: 5vw;
-        width: auto;
-        transform: rotate(90deg);
-        margin-top: 0.5vw;
+        position: absolute;
+        max-height: var(--navheight);
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        /*margin-top: 0.5vw;*/
         z-index: 0;
-        animation-name: lefttoright;
+        animation-name: righttoleft;
         animation-duration: 6s;
         animation-iteration-count: infinite;
-    }
-    .spacebg
-    {
-        background: black;
+        animation-direction: reverse;
     }
 }
