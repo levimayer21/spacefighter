@@ -8,10 +8,66 @@
     padding-bottom: 50px;
 }
 
+@keyframes lefttoright
+{
+    from {translate: -2vw}
+    to {translate: 101vw;}
+}
 #galagapic
 {
-    display: run-in;
-    max-width: 300px;
-    max-height: 400px;
-    orientation: landscape;
+    position: relative;
+    max-height: 45px;
+    height: 16vw;
+    transform: rotate(-90deg);
+    margin-top: 1.5vw;
+    z-index: 0;
+    animation-name: lefttoright;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.spacebg
+{
+    background: black;
+}
+
+@media only screen and (min-width: 600px)
+{
+    #galagapic
+    {
+        position: fixed;
+        height: 10vw;
+        width: auto;
+        transform: rotate(90deg);
+        margin-top: 1.5vw;
+        z-index: 0;
+        animation-name: lefttoright;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    .spacebg
+    {
+        background: black;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    #galagapic
+    {
+        position: fixed;
+        height: 5vw;
+        width: auto;
+        transform: rotate(90deg);
+        margin-top: 0.5vw;
+        z-index: 0;
+        animation-name: lefttoright;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    .spacebg
+    {
+        background: black;
+    }
 }
