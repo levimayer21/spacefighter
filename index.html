@@ -10,9 +10,9 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="spacebg z-depth-3" role="navigation">
+        <nav class="spacebg z-depth-3 zerooverflow" role="navigation">
             <div id="spacenav" class="nav-wrapper container">
-                <img id="galagapic" src="/img/galagaship.png" alt="galagaship.png">
+                <img src="/img/galagaship.png" alt="galagaship" id="galagapic">
                 <a id="logo-container" href="/index.html" class="brand-logo">SpaceFighter</a>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
@@ -35,10 +35,13 @@
         <!-- Content -->
         <div id="content" class="container">
             <p id="indexinfo" class="center-align flow-text hide-on-med-and-down grey-text text-darken-1">A játékhoz kattints a felül található "Játék" gombra!</p>
-            <div id="gameinfo" class="row">
+            <div id="gameinfo" class="row valign-wrapper">
                 <div class="col m8 s12 center">
                     <h3 class="">A Játékról</h3>
                     <p class="flow-text">A "SpaceFighter" nevezetű játék elkészítését egy régebbi NES/SNES-es játék ihlette meg. Úgy gondoltam jó lenne ezt a remekművet megtisztelnie egy újradolgozott verzióval, kicsit felfrissíteni az emberek emlékeit akik ezzel a játékkal valaha játszottak.</p>
+                </div>
+                <div class="col m4 hide-on-small-and-down">
+                    <img id="enemypic" src="/img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
                 </div>
             </div>
             <div class="row">

@@ -14,6 +14,22 @@
     100% {-webkit-transform: translate(-50vw); transform: translate(-50vw);}
 }
 
+@keyframes explosion
+{
+    0% {background: url(/img/explosion/row-1-col-1.png);}
+    9.09% {background: url(/img/explosion/row-1-col-2.png);}
+    18.18% {background: url(/img/explosion/row-1-col-3.png);}
+    27.27% {background: url(/img/explosion/row-1-col-4.png);}
+    36.36% {background: url(/img/explosion/row-1-col-5.png);}
+    45.45% {background: url(/img/explosion/row-1-col-6.png);}
+    54.54% {background: url(/img/explosion/row-1-col-7.png);}
+    63.63% {background: url(/img/explosion/row-1-col-8.png);}
+    72.72% {background: url(/img/explosion/row-1-col-9.png);}
+    81.81% {background: url(/img/explosion/row-1-col-10.png);}
+    90.9% {background: url(/img/explosion/row-1-col-11.png);}
+    100% {background: url(/img/explosion/row-1-col-12.png);}
+}
+
 #galagapic
 {
     position: absolute;
@@ -21,10 +37,23 @@
     /*margin-top: ;*/
     z-index: 0;
     animation-name: righttoleft;
-    animation-duration: 3s;
+    animation-duration: var(--shipspeed);
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
+}
+
+#enemypic
+{
+    animation-name: explosion;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.reversed
+{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 .spacebg
@@ -32,34 +61,7 @@
     background: black;
 }
 
-@media only screen and (min-width: 600px)
+.zerooverflow
 {
-    #galagapic
-    {
-        position: absolute;
-        max-height: var(--navheight);
-        /*margin-top: 1.5vw;*/
-        z-index: 0;
-        animation-name: righttoleft;
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-    }
-}
-
-@media only screen and (min-width: 768px)
-{
-    #galagapic
-    {
-        position: absolute;
-        max-height: var(--navheight);
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-        /*margin-top: 0.5vw;*/
-        z-index: 0;
-        animation-name: righttoleft;
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-direction: reverse;
-    }
+    overflow: hidden;
 }
