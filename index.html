@@ -5,21 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SpaceFighter</title>
         <link rel="stylesheet" href="/css/materialize.css" type="text/css" media="screen,projection">
-        <link rel="stylesheet" href="/css/style.css" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="spacebg z-depth-3 zerooverflow" role="navigation">
+        <nav class="black z-depth-3 nooverflow" role="navigation">
             <div id="spacenav" class="nav-wrapper container">
                 <img src="/img/galagaship.png" alt="galagaship" id="galagapic">
-                <a id="logo-container" href="/index.html" class="brand-logo">SpaceFighter</a>
+                <a id="logo-container" href="#" class="brand-logo bold-4">SpaceFighter</a>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="white-text waves-effect waves-light" href="/sites/game.html">Játék</a></li>
-                    <li><a class="white-text waves-effect waves-light" href="#">Ponttáblázat</a></li>
+                    <li><a class="white-text waves-effect waves-light" href="/sites/scoreboard.php">Ponttáblázat</a></li>
                     <li><a class="white-text waves-effect waves-light" href="#">Irányítás</a></li>
                 </ul>
             </div>
@@ -28,7 +30,7 @@
         <ul id="nav-mobile" class="sidenav">
             <li><h2 class="center-align">Menü</h2></li>
             <li><a class="waves-effect waves-light" href="/sites/game.html">Játék</a></li>
-            <li><a class="waves-effect waves-light">Ponttáblázat</a></li>
+            <li><a class="waves-effect waves-light" href="/sites/scoreboard.php">Ponttáblázat</a></li>
             <li><a class="white-text waves-effect waves-light" href="#">Irányítás</a></li>
         </ul>
 
@@ -36,34 +38,59 @@
         <div id="content" class="container">
             <p id="indexinfo" class="center-align flow-text hide-on-med-and-down grey-text text-darken-1">A játékhoz kattints a felül található "Játék" gombra!</p>
             <div id="gameinfo" class="row valign-wrapper">
-                <div class="col m8 s12 center">
-                    <h3 class="">A Játékról</h3>
+                <div class="col s12 center">
+                    <h3 class="orbitron">A Játékról</h3>
                     <p class="flow-text">A "SpaceFighter" nevezetű játék elkészítését egy régebbi NES/SNES-es játék ihlette meg. Úgy gondoltam jó lenne ezt a remekművet megtisztelnie egy újradolgozott verzióval, kicsit felfrissíteni az emberek emlékeit akik ezzel a játékkal valaha játszottak.</p>
                 </div>
-                <div class="col m4 hide-on-small-and-down">
+            </div>
+            <div id="videocard" class="row center-align" data-aos="fade-up">
+                <ul class="collapsible popout spacebg z-depth-3">
+                    <li>
+                        <div class="collapsible-header spacebg valign-wrapper"><h3 class="white-text center-block orbitron">Videó a klasszikusról</h3></div>
+                        <div class="collapsible-body">
+                            <div class="video-container">
+                                <iframe class="responsive-video" width="560" height="315" src="https://www.youtube.com/embed/dvjapcHsqXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="interstuff" class="row valign-wrapper" data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                <div class="col s4 m5 center">
                     <img id="enemypic" src="/img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
                 </div>
-            </div>
-            <div class="row">
-                <h3 class="center-align">Videó az eredeti játékról</h3>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dvjapcHsqXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div id="interstuff" class="row">
-                <div class="col s4">
-                    <img id="starship" class="responsive-img circle valign-wrapper center-align" src="/img/b65os8d4.bmp" alt="urhajo.img">
-                </div>
-                <div class="col s8">
+                <div class="col s8 m7 right-align">
                     <h3>Versenyezz!</h3>
                     <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
                 </div>
             </div>
         </div>
 
+        <!-- Footer -->
+        <footer class="page-footer z-depth-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4 push-m8 right-align">
+                        <h3>Jó Tesztelést!;)</h3>
+                        <p>Ha hibát találnál jelezd itt: <br>
+                            <p>leventemayer1@hotmail.hu<a href="mailto: leventemayer1@hotmail.hu"><i class="small material-icons white-text center right">mail</i></a></p>
+                            <p>Mayer Levente<a href="https://www.messenger.com/t/levimayer0804"><i class="small material-icons white-text right">people</i></a></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright black zerooverflow">
+                © 2020 Mayer Levente
+            </div>
+        </footer>
+
         <!-- JS hátul optimalizációs célokból-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="/js/materialize.js"></script>
         <script type="text/javascript" src="/js/actions.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>

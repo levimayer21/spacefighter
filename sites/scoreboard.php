@@ -21,7 +21,7 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="white-text waves-effect waves-light" href="/sites/game.html">Játék</a></li>
-                    <li><a class="white-text waves-effect waves-light" href="/sites/scoreboard.php">Ponttáblázat</a></li>
+                    <li><a class="white-text waves-effect waves-light" href="#">Ponttáblázat</a></li>
                     <li><a class="white-text waves-effect waves-light" href="#">Irányítás</a></li>
                 </ul>
             </div>
@@ -29,14 +29,23 @@
 
         <ul id="nav-mobile" class="sidenav">
             <li><h2 class="center-align">Menü</h2></li>
-            <li><a class="waves-effect waves-light" href="#">Játék</a></li>
-            <li><a class="waves-effect waves-light" href="/sites/scoreboard.php">Ponttáblázat</a></li>
+            <li><a class="waves-effect waves-light" href="/sites/game.html">Játék</a></li>
+            <li><a class="waves-effect waves-light">Ponttáblázat</a></li>
             <li><a class="white-text waves-effect waves-light" href="#">Irányítás</a></li>
         </ul>
 
         <!-- Content -->
         <div id="content" class="container">
-            <h1>hello</h1>
+            <table>
+                <thead>
+                    <th>Helyezés</th>
+                    <th>Név</th>
+                    <th>Pontszám</th>
+                    <th>Játékidő</th>
+                </thead>
+
+                
+            </table>
         </div>
         <!-- Footer -->
         <footer class="page-footer z-depth-3">

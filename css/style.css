@@ -1,6 +1,17 @@
 :root
 {
-    --primary: #666666;
+    --primary: #0E0E0E;
+}
+
+#spacenav a
+{
+    font-family: 'Orbitron', sans-serif;
+    background: rgb(0,0,0,0.3);
+}
+
+.orbitron
+{
+    font-family: 'Orbitron', sans-serif;
 }
 
 #content .row
@@ -12,22 +23,6 @@
 {
     0% {-webkit-transform: translate(120vw); transform: translate(120vw);}
     100% {-webkit-transform: translate(-50vw); transform: translate(-50vw);}
-}
-
-@keyframes explosion
-{
-    0% {background: url(/img/explosion/row-1-col-1.png);}
-    9.09% {background: url(/img/explosion/row-1-col-2.png);}
-    18.18% {background: url(/img/explosion/row-1-col-3.png);}
-    27.27% {background: url(/img/explosion/row-1-col-4.png);}
-    36.36% {background: url(/img/explosion/row-1-col-5.png);}
-    45.45% {background: url(/img/explosion/row-1-col-6.png);}
-    54.54% {background: url(/img/explosion/row-1-col-7.png);}
-    63.63% {background: url(/img/explosion/row-1-col-8.png);}
-    72.72% {background: url(/img/explosion/row-1-col-9.png);}
-    81.81% {background: url(/img/explosion/row-1-col-10.png);}
-    90.9% {background: url(/img/explosion/row-1-col-11.png);}
-    100% {background: url(/img/explosion/row-1-col-12.png);}
 }
 
 #galagapic
@@ -43,13 +38,6 @@
     animation-timing-function: linear;
 }
 
-#enemypic
-{
-    animation-name: explosion;
-    animation-duration: 2s;
-    animation-delay: 2s;
-}
-
 .reversed
 {
     transform: rotate(180deg);
@@ -58,10 +46,42 @@
 
 .spacebg
 {
-    background: black;
+    background: var(--primary);
 }
 
-.zerooverflow
+.nooverflow
 {
     overflow: hidden;
 }
+
+.page-footer
+{
+    background-color: #0E0E0E;
+}
+
+#videocard
+{
+    margin-bottom: var(--marginHeight);
+    padding: 20px auto; 
+}
+
+.bold-1
+{
+    font-weight: 100;
+}
+
+.bold-2
+{
+    font-weight: 300;
+}
+
+.bold-3
+{
+    font-weight: 600;
+}
+
+.bold-4
+{
+    font-weight: 900;
+}
+
