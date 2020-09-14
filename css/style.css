@@ -3,6 +3,13 @@
     --primary: #0E0E0E;
 }
 
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
 #spacenav a
 {
     font-family: 'Orbitron', sans-serif;
