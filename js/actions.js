@@ -1,11 +1,3 @@
-$(document).ready(function()
-{
-    $('.sidenav').sidenav();
-    $('.collapsible').collapsible();
-    $('.parallax').parallax();
-}
-);
-
 var navHeight = document.getElementById("spacenav").clientHeight + "px";
 var marHeight = (document.getElementsByTagName("body")[0].clientHeight / 45) + "px";
 var navWidth = document.getElementsByTagName("nav")[0].clientWidth;
@@ -29,14 +21,11 @@ document.documentElement.style.setProperty("--shipspeed", speedtosize + "s");
 document.body.style.setProperty("--navheight", navHeight);
 document.body.style.setProperty("--marginHeight", marHeight);
 document.body.style.setProperty("--shipspeed", speedtosize + "s");
-var parcon = document.getElementsByClassName("parallax-container");
-
-
-
-var topBtn = document.getElementById("toTopButton");
 
 
 //Scroll funkció, érzékeli ha a toTop gombnak meg kell-e jelennie
+var topBtn = document.getElementById("toTopButton");
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() 
@@ -53,5 +42,14 @@ function scrollFunction()
 
 function toTop()
 {
-    window.scroll({top: 0, left: 0, behavior: 'smooth'});
+    document.querySelector('header').scrollIntoView({behavior: "smooth"});
 }
+
+//jQuery
+
+$(document).ready(function()
+{
+    $('.sidenav').sidenav();
+    $('.collapsible').collapsible();
+    $('.parallax').parallax();
+});
