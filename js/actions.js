@@ -2,6 +2,7 @@ $(document).ready(function()
 {
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
+    $('.parallax').parallax();
 }
 );
 
@@ -28,6 +29,9 @@ document.documentElement.style.setProperty("--shipspeed", speedtosize + "s");
 document.body.style.setProperty("--navheight", navHeight);
 document.body.style.setProperty("--marginHeight", marHeight);
 document.body.style.setProperty("--shipspeed", speedtosize + "s");
+var parcon = document.getElementsByClassName("parallax-container");
+
+
 
 var topBtn = document.getElementById("toTopButton");
 

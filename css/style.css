@@ -40,8 +40,7 @@
 
 #videocard
 {
-    margin-bottom: var(--marginHeight);
-    padding: 20px auto; 
+    margin-bottom: 0px;
 }
 
 #toTopButton
@@ -80,3 +79,18 @@
     font-weight: 900;
 }
 
+.parallax-container
+{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 995px)
+{
+    .parallax-container
+    {
+        height: 200px;
+        width: 1200px;
+        margin-bottom: 25px;
+    }
+}
