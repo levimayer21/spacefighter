@@ -24,9 +24,31 @@
     color: white;
 }
 
-#content .row
+body 
 {
-    padding-bottom: 50px;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main 
+{
+    flex: 1 0 auto;
+}
+
+.parallax-container
+{
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 995px)
+{
+    .parallax-container
+    {
+        height: 200px;
+        margin-bottom: 25px;
+    }
 }
 
 @keyframes righttoleft
@@ -48,7 +70,7 @@
     animation-timing-function: linear;
 }
 
-#gameinfo
+#gameinfo.col.s12.center p
 {
     padding-bottom: 25px;
 }
@@ -92,19 +114,4 @@
 .bold-4
 {
     font-weight: 900;
-}
-
-.parallax-container
-{
-    height: 100px;
-    margin-bottom: 25px;
-}
-
-@media only screen and (min-width: 995px)
-{
-    .parallax-container
-    {
-        height: 200px;
-        margin-bottom: 25px;
-    }
 }
