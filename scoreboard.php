@@ -4,7 +4,7 @@
     
     <!-- Content -->
     <main>
-        <div id="content" class="container">
+        <div id="content" class="container valign-wrapper">
             <table>
                 <thead>
                     <th>Helyezés</th>

@@ -32,7 +32,7 @@
         </div>
         <div id="content2" class="container" style="overflow-x: visible;">
             <div class="nooverflow">
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
                         <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
                     </div>
@@ -41,7 +41,7 @@
                         <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
                     </div>
                 </div>
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s8 m7 right-align">
                         <h4>Versenyezz!</h4>
                         <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
@@ -50,7 +50,7 @@
                         <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
                     </div>
                 </div>
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
                         <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
                     </div>
@@ -59,7 +59,7 @@
                         <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
                     </div>
                 </div>            
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="top-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s8 m7 right-align">
                         <h4>Versenyezz!</h4>
                         <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
