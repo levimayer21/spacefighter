@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    float speed = 1.0f;
+    float speed;
     Rigidbody2D playerrig;
 
     private void Start()
     {
-        playerrig = gameObject.GetComponent<Rigidbody2D>();
+        playerrig = GetComponent<Rigidbody2D>();
     }
-    // Update is called once per frame
+
+    private void Update()
+    {
+        speed = Input.GetAxisRaw("Horizontal") * 170.0f * Time.deltaTime;
+    }
+
     void FixedUpdate()
     {
-
-    }
-
-    public void ToLeft()
-    {
-        playerrig.AddForce(new Vector2(-speed, 0), ForceMode2D.Force);
+        playerrig.velocity = new Vector2(speed, 0);
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, -2.5f, 2.5f), -3.8f);
     }
 }
