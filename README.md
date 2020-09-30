@@ -1,2 +1,3 @@
-# szakdoga
-Git for my game/pwa site
+Játék az oldalhoz
+
+UNITY alapú
