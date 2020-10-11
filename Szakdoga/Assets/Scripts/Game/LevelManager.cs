@@ -10,58 +10,57 @@ public class LevelManager : MonoBehaviour
     public static int round;
     public static int usableEnemyCount;
     public static bool spawnerSet;
+    public static bool roundEnded;
 
-    public int playerHealth;
-    public int points;
+    public static int playerHealth;
+    public static int points;
     public GameObject enemySpawner;
 
     LevelManager backup;
 
     private void Awake()
     {
+        roundEnded = false;
         spawnerSet = false;
         instance = this;
-        round = 1;
+        round = 0;
         isMoveEnabled = true;
         lostALife = false;
         playerHealth = 3;
         points = 0;
-    }
-
-    private void Start()
-    {
         GameEvent.gameEvent.onRoundStart += SetRound;
     }
+
     private void Update()
     {
-        if (!GameAnim.roundAnimActive && !spawnerSet)
+        if (!GameAnim.roundAnimActive && !spawnerSet && usableEnemyCount > 1)
         {
             GameObject spawner = Instantiate(enemySpawner);
             spawnerSet = true;
+        }
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length < 1 && roundEnded && !spawnerSet && playerHealth > 0)
+        {
+            GameEvent.gameEvent.RoundStart();
+            roundEnded = false;
         }
     }
 
     void SetRound()
     {
-        usableEnemyCount = 25 + (5*round);
-        backup = instance;
-        Debug.Log("Backup Done");
-        enemySpeed = -2f * (0.7f * round);
-        Debug.Log(enemySpeed);
-    }
-
-    void AfterDeath()
-    {
-        foreach (GameObject item in GameObject.FindGameObjectsWithTag("Enemy"))
+        roundEnded = false;
+        if (!lostALife)
         {
-            Destroy(item);
+            round++;
         }
-        ReloadRound();
+        usableEnemyCount = 2 + (5*round);
+        enemySpeed = -2f * (0.7f * round);
+        backup = instance;
     }
 
-    void ReloadRound()
+    public void ReloadRound()
     {
         instance = backup;
         GameEvent.gameEvent.RoundStart();
+        lostALife = false;
     }
 }

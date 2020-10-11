@@ -32,7 +32,7 @@ public class PlayerBehaviour : MonoBehaviour
         float horMov = Input.GetAxisRaw("Horizontal");
         float tCount = Input.touchCount;
 
-        if (LevelManager.isMoveEnabled && !GameAnim.roundAnimActive)
+        if (LevelManager.isMoveEnabled)
         {
             if (tCount > 0)
             {
@@ -112,17 +112,21 @@ public class PlayerBehaviour : MonoBehaviour
         GameObject e = Instantiate(explosion, transform.position, Quaternion.identity);
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<EdgeCollider2D>().enabled = false;
-        LevelManager.instance.playerHealth--;
+        LevelManager.playerHealth--;
         StartCoroutine(RespawnActuator());
     }
 
     void RespawnPlayer()
     {
-        LevelManager.lostALife = false;
         LevelManager.isMoveEnabled = true;
         gameObject.transform.position = startPoint;
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
         gameObject.GetComponent<EdgeCollider2D>().enabled = true;
+        foreach (GameObject item in GameObject.FindGameObjectsWithTag("Enemy"))
+        {
+            Destroy(item);
+        }
+        LevelManager.instance.ReloadRound();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

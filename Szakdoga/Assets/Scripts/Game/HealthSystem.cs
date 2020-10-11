@@ -8,7 +8,7 @@ public class HealthSystem : MonoBehaviour
 
     private void Update()
     {
-        health = LevelManager.instance.playerHealth;
+        health = LevelManager.playerHealth;
 
         for (int i = 0; i < shiphp.Length; i++)
         {

@@ -38,7 +38,7 @@ public class GameAnim : MonoBehaviour
         Destroy(animPlayer);
         Instantiate(player, playerStartPoint.transform.position, Quaternion.identity);
         controlGUI.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         GameEvent.gameEvent.RoundStart();
     }    
 

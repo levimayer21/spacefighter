@@ -15,7 +15,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
         health--;
         if (health < 1)
         {
-            LevelManager.instance.points += points;
+            LevelManager.points += points;
             GameObject e = Instantiate(explosion) as GameObject;
             e.transform.position = transform.position;
             Destroy(gameObject);
