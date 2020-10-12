@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8578679464513495855}
   - component: {fileID: 8578679464513495856}
   - component: {fileID: 2209449475020659830}
-  - component: {fileID: 6679331402758543818}
+  - component: {fileID: 6321075029776920339}
   - component: {fileID: 1869579402981539229}
   m_Layer: 0
   m_Name: normie-enemy
@@ -125,8 +125,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!68 &6679331402758543818
-EdgeCollider2D:
+--- !u!61 &6321075029776920339
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -139,21 +139,18 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8192, y: 0.8192}
+    newSize: {x: 0.8192, y: 0.8192}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8192, y: 0.8192}
   m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.015601786, y: 0.405226}
-  - {x: 0.020787017, y: 0.3273306}
-  - {x: 0.019530741, y: 0.319942}
-  - {x: 0.08575325, y: 0.20100236}
-  - {x: 0.39988238, y: -0.1039238}
-  - {x: 0.40218195, y: -0.13879657}
-  - {x: 0.053426802, y: -0.2841537}
-  - {x: -0.0629521, y: -0.28195763}
-  - {x: -0.4115341, y: -0.13035989}
-  - {x: -0.10377411, y: 0.19023561}
-  - {x: -0.023149686, y: 0.33222198}
-  - {x: -0.021943552, y: 0.40161848}
-  - {x: 0.018642725, y: 0.40237212}
 --- !u!114 &1869579402981539229
 MonoBehaviour:
   m_ObjectHideFlags: 0

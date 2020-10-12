@@ -9,9 +9,8 @@ public class Spawner : MonoBehaviour
 
     private void Update()
     {
-        if (LevelManager.usableEnemyCount < 1 && GameObject.FindGameObjectsWithTag("Enemy").Length < 1)
+        if ((LevelManager.usableEnemyCount < 1 && GameObject.FindGameObjectsWithTag("Enemy").Length < 1) || LevelManager.lostALife)
         {
-            Debug.Log("Disabled");
             LevelManager.roundEnded = true;
             LevelManager.spawnerSet = false;
             Destroy(gameObject);
@@ -25,31 +24,27 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnEnemy()
     {
-        while (LevelManager.usableEnemyCount > 0)
+        while (LevelManager.usableEnemyCount > 0 && !LevelManager.lostALife)
         {
-            if (!LevelManager.lostALife)
+            float rand = Random.Range(0, 3);
+            switch (rand)
             {
-                float rand = Random.Range(0, 3);
-                Debug.Log(rand);
-                switch (rand)
-                {
-                    case 0:
-                        Instantiate(enemyPref[0], new Vector3(Random.Range(-2.8f, 1f), 9f, 0f), Quaternion.Euler(new Vector3(180, 0, 0))).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
-                        LevelManager.usableEnemyCount--;
-                        break;
-                    case 1:
-                        Instantiate(enemyPref[1], new Vector3(Random.Range(-2.8f, 1f), 9f, 0f), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
-                        LevelManager.usableEnemyCount--;
-                        break;
-                    case 2:
-                        float randX = Random.Range(-2.8f, 1f);
-                        Instantiate(enemyPref[2], new Vector3(Random.Range(randX, 1f), 9f, 0f), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
-                        Instantiate(enemyPref[2], new Vector3(Random.Range(Mathf.Clamp(randX + 1f, -2.8f, 1f), 1f), 9f, 0f), Quaternion.Inverse(Quaternion.identity)).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
-                        LevelManager.usableEnemyCount -= 2;
-                        break;
-                }
-                yield return new WaitForSecondsRealtime(Random.Range(1f, 3f));
+                case 0:
+                    Instantiate(enemyPref[0], new Vector3(Random.Range(-2.8f, 1f), 9f, 0f), Quaternion.Euler(new Vector3(180, 0, 0))).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                    LevelManager.usableEnemyCount--;
+                    break;
+                case 1:
+                    Instantiate(enemyPref[1], new Vector3(Random.Range(-2.8f, 1f), 9f, 0f), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                    LevelManager.usableEnemyCount--;
+                    break;
+                case 2:
+                    float randX = Random.Range(-2.8f, 1f);
+                    Instantiate(enemyPref[2], new Vector3(Random.Range(randX, 1f), 9f, 0f), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                    Instantiate(enemyPref[2], new Vector3(Random.Range(Mathf.Clamp(randX + 1f, -2.8f, 1f), 1f), 9f, 0f), Quaternion.Inverse(Quaternion.identity)).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                    LevelManager.usableEnemyCount -= 2;
+                    break;
             }
+            yield return new WaitForSecondsRealtime(Random.Range(1f, 3f));
         }
     }
 }

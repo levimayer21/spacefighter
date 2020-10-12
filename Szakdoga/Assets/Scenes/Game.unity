@@ -186,7 +186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &19159819
 MonoBehaviour:
@@ -1045,7 +1045,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &533115717 stripped
 GameObject:
@@ -2062,6 +2062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 989958871}
+  - component: {fileID: 989958872}
   - component: {fileID: 989958870}
   m_Layer: 0
   m_Name: LevelManager
@@ -2082,8 +2083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983665d86d0270246b47754f36446458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 0
-  points: 0
   enemySpawner: {fileID: 8453507730326950888, guid: 596d7962f3157b34cba7074a0a0d013a,
     type: 3}
 --- !u!4 &989958871
@@ -2098,8 +2097,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989958872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989958869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0edd6af42a1bc74884f98d3b5eab66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverScn: {fileID: 1635696811}
+  gameOverTxt: {fileID: 1476722832}
 --- !u!1 &1004732562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,7 +2369,7 @@ RectTransform:
   - {fileID: 932787600}
   - {fileID: 1635696812}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2999,7 +3012,7 @@ GameObject:
   - component: {fileID: 1476722833}
   - component: {fileID: 1476722832}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3045,8 +3058,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: -3626914512501183521, guid: 4ef3d1e435419884bad31aa8cb841b26,
+  m_fontAsset: {fileID: 11400000, guid: 19b7919e85aa217408b940c438a43b05, type: 2}
+  m_sharedMaterial: {fileID: 8243109429298136723, guid: 19b7919e85aa217408b940c438a43b05,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3072,8 +3085,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3365,75 +3378,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 1150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1705067086
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.016
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.164
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495854, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578679464513495857, guid: 7ab02fa13678cca4d8d917be517e0174,
-        type: 3}
-      propertyPath: m_Name
-      value: normie-enemy
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7ab02fa13678cca4d8d917be517e0174, type: 3}
 --- !u!1 &1786717766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,7 +3587,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1857902340
 GameObject:
@@ -4135,7 +4079,7 @@ PrefabInstance:
     - target: {fileID: 6970953687620217438, guid: b608249424f87f34b930e2d71c7eaff0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6970953687620217438, guid: b608249424f87f34b930e2d71c7eaff0,
         type: 3}

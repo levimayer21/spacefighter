@@ -22,7 +22,7 @@ public class PlayerBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         GameEvent.gameEvent.onDeath += Killed;
         Input.multiTouchEnabled = true;
-        moveSpeed = 3.0f;
+        moveSpeed = 3.5f;
     }
 
     // Update is called once per frame
@@ -109,15 +109,24 @@ public class PlayerBehaviour : MonoBehaviour
     {
         LevelManager.lostALife = true;
         LevelManager.isMoveEnabled = false;
-        GameObject e = Instantiate(explosion, transform.position, Quaternion.identity);
+        Instantiate(explosion, transform.position, Quaternion.identity);
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<EdgeCollider2D>().enabled = false;
         LevelManager.playerHealth--;
-        StartCoroutine(RespawnActuator());
+        if (LevelManager.playerHealth == 0)
+        {
+            LevelManager.playerLost = true;
+            GameEvent.gameEvent.GameEnd();
+        }
+        else
+        {
+            StartCoroutine(RespawnPlayer());  
+        }
     }
 
-    void RespawnPlayer()
+    IEnumerator RespawnPlayer()
     {
+        yield return new WaitForSecondsRealtime(1.5f);
         LevelManager.isMoveEnabled = true;
         gameObject.transform.position = startPoint;
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
@@ -126,21 +135,28 @@ public class PlayerBehaviour : MonoBehaviour
         {
             Destroy(item);
         }
+        foreach (GameObject item in GameObject.FindGameObjectsWithTag("EnemyBullet"))
+        {
+            Destroy(item);
+        }    
         LevelManager.instance.ReloadRound();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             GameEvent.gameEvent.Death();
             Destroy(collision.gameObject);
         }
     }
 
-    IEnumerator RespawnActuator()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        yield return new WaitForSecondsRealtime(2);
-        RespawnPlayer();
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            GameEvent.gameEvent.Death();
+            Destroy(collision.gameObject);
+        }
     }
 }

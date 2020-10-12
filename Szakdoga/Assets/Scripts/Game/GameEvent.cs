@@ -21,13 +21,11 @@ public class GameEvent : MonoBehaviour
     {
         onRoundEnd?.Invoke();
     }
-
     public event Action onDeath;
     public void Death()
     {
         onDeath?.Invoke();
     }
-
     public event Action onGameEnd;
     public void GameEnd()
     {

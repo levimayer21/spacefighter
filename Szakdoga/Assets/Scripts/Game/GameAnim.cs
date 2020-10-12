@@ -21,9 +21,13 @@ public class GameAnim : MonoBehaviour
 
     public static bool roundAnimActive;
 
-    private void Start()
+    private void Awake()
     {
         GameEvent.gameEvent.onRoundStart += ActivateRoundStart;
+    }
+
+    private void Start()
+    {
         StartCoroutine(StartAnim());
     }
 
@@ -38,7 +42,7 @@ public class GameAnim : MonoBehaviour
         Destroy(animPlayer);
         Instantiate(player, playerStartPoint.transform.position, Quaternion.identity);
         controlGUI.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
         GameEvent.gameEvent.RoundStart();
     }    
 

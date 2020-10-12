@@ -16,8 +16,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
         if (health < 1)
         {
             LevelManager.points += points;
-            GameObject e = Instantiate(explosion) as GameObject;
-            e.transform.position = transform.position;
+            Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

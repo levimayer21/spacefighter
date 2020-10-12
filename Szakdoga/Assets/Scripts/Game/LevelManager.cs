@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
@@ -11,37 +12,47 @@ public class LevelManager : MonoBehaviour
     public static int usableEnemyCount;
     public static bool spawnerSet;
     public static bool roundEnded;
+    public static bool playerLost;
 
     public static int playerHealth;
     public static int points;
     public GameObject enemySpawner;
 
-    LevelManager backup;
+    int backupScore;
+    GameObject spawner;
 
     private void Awake()
     {
+        GameEvent.gameEvent.onRoundStart += SetRound;
+    }
+
+    private void Start()
+    {
+        playerLost = false;
         roundEnded = false;
         spawnerSet = false;
         instance = this;
-        round = 0;
+        round = 4;
         isMoveEnabled = true;
         lostALife = false;
-        playerHealth = 3;
+        playerHealth = 1;
         points = 0;
-        GameEvent.gameEvent.onRoundStart += SetRound;
     }
 
     private void Update()
     {
-        if (!GameAnim.roundAnimActive && !spawnerSet && usableEnemyCount > 1)
+        if (!playerLost)
         {
-            GameObject spawner = Instantiate(enemySpawner);
-            spawnerSet = true;
-        }
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length < 1 && roundEnded && !spawnerSet && playerHealth > 0)
-        {
-            GameEvent.gameEvent.RoundStart();
-            roundEnded = false;
+            if (!lostALife && !GameAnim.roundAnimActive && !spawnerSet && usableEnemyCount > 1)
+            {
+                spawner = Instantiate(enemySpawner);
+                spawnerSet = true;
+            }
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length < 1 && roundEnded && !spawnerSet && playerHealth > 0)
+            {
+                GameEvent.gameEvent.RoundStart();
+                roundEnded = false;
+            } 
         }
     }
 
@@ -53,13 +64,13 @@ public class LevelManager : MonoBehaviour
             round++;
         }
         usableEnemyCount = 2 + (5*round);
-        enemySpeed = -2f * (0.7f * round);
-        backup = instance;
+        enemySpeed = -2.3f * (0.3f * round);
+        backupScore = points;
     }
 
     public void ReloadRound()
     {
-        instance = backup;
+        points = backupScore;
         GameEvent.gameEvent.RoundStart();
         lostALife = false;
     }

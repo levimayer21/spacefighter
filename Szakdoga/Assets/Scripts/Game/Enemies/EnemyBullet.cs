@@ -2,8 +2,7 @@
 
 public class EnemyBullet : MonoBehaviour
 {
-    float speed = -15.0f;
-    Rigidbody2D rb;
+    float speed = -10.0f;
     Vector2 scBound;
 
     public GameObject explosion;
@@ -11,8 +10,7 @@ public class EnemyBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, speed);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
         scBound = new Vector2(0, -5.4f);
     }
 
@@ -27,10 +25,10 @@ public class EnemyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             GameEvent.gameEvent.Death();
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }

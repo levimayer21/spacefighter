@@ -21,13 +21,13 @@ public class LoginFlash : MonoBehaviour
         {
             if (text.enabled)
             {
-                yield return new WaitForSeconds(0.85f);
+                yield return new WaitForSeconds(0.75f);
                 text.enabled = false;
                 Debug.Log("Disabled");
             }
             else
             {
-                yield return new WaitForSeconds(0.85f);
+                yield return new WaitForSeconds(0.75f);
                 text.enabled = true;
                 Debug.Log("Enabled");
             }
