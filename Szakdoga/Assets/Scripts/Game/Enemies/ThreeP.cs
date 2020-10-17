@@ -13,11 +13,11 @@ public class ThreeP : EnemyBehaviour
 
     internal override void OnHit()
     {
-        float add = -0.8f;
+        float add = -0.6f;
         for (int i = 0; i < 3; i++)
         {
             Instantiate(threePSmall, new Vector3(transform.position.x + add, transform.position.y, transform.position.z), Quaternion.identity);
-            add += 0.8f;
+            add += 0.6f;
         }
         base.OnHit();
     }

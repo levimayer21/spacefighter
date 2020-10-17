@@ -135,4 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 568691821700726442, guid: cbb475d25231dad41a114a368c7cb644,
     type: 3}
-  player: {fileID: 4901852166014773499, guid: c334d6fd948e0334783bd2c35f68f2bc, type: 3}
+  rotationSpeed: 1

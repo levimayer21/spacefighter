@@ -23,10 +23,10 @@ public class GameOver : MonoBehaviour
 
     private void Update()
     {
-        /*if (onEnd && Input.anyKeyDown)
+        if (gameOverScn.activeSelf && Input.anyKeyDown)
         {
             SceneManager.LoadSceneAsync(2);
-        }*/
+        }
     }
 
     void ActivateEndScreen()

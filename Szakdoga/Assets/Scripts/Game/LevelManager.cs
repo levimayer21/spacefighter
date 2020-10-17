@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
         round = 4;
         isMoveEnabled = true;
         lostALife = false;
-        playerHealth = 1;
+        playerHealth = 3;
         points = 0;
     }
 
@@ -63,7 +63,7 @@ public class LevelManager : MonoBehaviour
         {
             round++;
         }
-        usableEnemyCount = 2 + (5*round);
+        usableEnemyCount = 20 + (3*round);
         enemySpeed = -2.3f * (0.3f * round);
         backupScore = points;
     }

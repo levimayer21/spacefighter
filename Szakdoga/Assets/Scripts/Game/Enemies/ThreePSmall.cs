@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ThreePSmall : EnemyBehaviour
 {
+    public float rotationSpeed = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,7 @@ public class ThreePSmall : EnemyBehaviour
     {
         if (transform.position.y > -2.2f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position, 0.03f);
+            transform.position = Vector3.MoveTowards(transform.position, GameObject.FindGameObjectWithTag("Player").transform.position, 0.04f);
         }
     }
 }

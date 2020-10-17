@@ -38,13 +38,14 @@ public class Spawner : MonoBehaviour
                     LevelManager.usableEnemyCount--;
                     break;
                 case 2:
-                    float randX = Random.Range(-2.8f, 1f);
-                    Instantiate(enemyPref[2], new Vector3(Random.Range(randX, 1f), 9f, 0f), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
-                    Instantiate(enemyPref[2], new Vector3(Random.Range(Mathf.Clamp(randX + 1f, -2.8f, 1f), 1f), 9f, 0f), Quaternion.Inverse(Quaternion.identity)).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                    float randX = Random.Range(-2.0f, 0.2f);
+                    GameObject en = Instantiate(enemyPref[2], new Vector3(randX, 9f, 0f), Quaternion.identity);
+                    en.GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                    Instantiate(enemyPref[2], new Vector3(randX < -0.874f? en.transform.position.x - Random.Range(3f, 4f): en.transform.position.x + Random.Range(3f, 4f), 9f, 0f), Quaternion.identity).GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
                     LevelManager.usableEnemyCount -= 2;
                     break;
             }
-            yield return new WaitForSecondsRealtime(Random.Range(1f, 3f));
+            yield return new WaitForSecondsRealtime(Random.Range(1.5f, 3f));
         }
     }
 }
