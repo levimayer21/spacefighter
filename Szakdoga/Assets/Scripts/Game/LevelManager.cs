@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     public static bool spawnerSet;
     public static bool roundEnded;
     public static bool playerLost;
+    public static ClockTime time;
 
     public static int playerHealth;
     public static int points;

@@ -11,11 +11,6 @@ public class GameOver : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI gameOverTxt;
 
-    private void Awake()
-    {
-
-    }
-
     private void Start()
     {
         GameEvent.gameEvent.onGameEnd += ActivateEndScreen;
