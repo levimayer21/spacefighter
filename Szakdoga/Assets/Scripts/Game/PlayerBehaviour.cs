@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -116,6 +117,8 @@ public class PlayerBehaviour : MonoBehaviour
         if (LevelManager.playerHealth == 0)
         {
             LevelManager.playerLost = true;
+            LevelManager.sp.Stop();
+            LevelManager.time = new ClockTime(new TimeSpan(LevelManager.sp.Elapsed.Hours,LevelManager.sp.Elapsed.Minutes,LevelManager.sp.Elapsed.Seconds));
             GameEvent.gameEvent.GameEnd();
         }
         else

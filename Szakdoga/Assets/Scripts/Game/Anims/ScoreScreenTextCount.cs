@@ -25,13 +25,12 @@ public class ScoreScreenTextCount : MonoBehaviour
 
     IEnumerator Counter()
     {
-        int i = 0;
-        while (text.text != LevelManager.points.ToString())
+        while (int.Parse(text.text) <= LevelManager.points)
         {
-            i += 50;
-            text.text = i.ToString();
+            text.text = (int.Parse(text.text) + 350).ToString();
             yield return null;
         }
+        text.text = LevelManager.points.ToString();
         animator.SetBool("scoreScreenCountingEnded", true);
     }
 }

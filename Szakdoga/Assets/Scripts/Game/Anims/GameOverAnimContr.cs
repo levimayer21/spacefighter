@@ -4,32 +4,28 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Animations;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityMySQL;
 
 public class GameOverAnimContr : MonoBehaviour
 {
     [SerializeField] GameObject gameOverTxtContainer;
+    [SerializeField] GameObject nameContainer;
     [SerializeField] GameObject scoreContainer;
     [SerializeField] GameObject timeContainer;
     [SerializeField] GameObject buttonContainer;
+    [SerializeField] GameObject scoreChecker;
 
     UnityMySQL.UnityMySQL mySql;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        LevelManager.points = 10000;
-        LevelManager.time = new ClockTime(new TimeSpan(0, 25, 15));
-        Debug.Log(LevelManager.time.Time);
-    }
-
     void Update()
     {
-        if (!gameOverTxtContainer.activeSelf)
+        gameOverTxtContainer.SetActive(true);
+        if (LevelManager.points > 50000 && !NameAccept.nameSaved)
         {
-            gameOverTxtContainer.SetActive(true); 
+            nameContainer.SetActive(true);
         }
-        if (gameOverTxtContainer.GetComponent<Animator>().GetBool("gameOverAnimEnded"))
+        if (gameOverTxtContainer.GetComponent<Animator>().GetBool("gameOverAnimEnded") && !nameContainer.activeSelf)
         {
             scoreContainer.SetActive(true);
             if (scoreContainer.GetComponent<Animator>().GetBool("scoreScreenCountingEnded"))
@@ -37,9 +33,21 @@ public class GameOverAnimContr : MonoBehaviour
                 timeContainer.SetActive(true);
             }
         }
-        if (scoreContainer.GetComponent<Animator>().GetBool("scoreScreenAnimEnded") && scoreContainer.GetComponent<Animator>().GetBool("scoreScreenCountingEnded") && timeContainer.GetComponent<Animator>().GetBool("timeScreenAnimEnded") && timeContainer.GetComponent<Animator>().GetBool("timeScreenCountEnded"))
+        if (scoreContainer.GetComponent<Animator>().GetBool("scoreScreenCountingEnded") && timeContainer.GetComponent<Animator>().GetBool("timeScreenAnimEnded") && timeContainer.GetComponent<Animator>().GetBool("timeScreenCountEnded"))
         {
+            scoreChecker.GetComponent<TextMeshProUGUI>().text = SqlTasks.CheckForPlacement();
             buttonContainer.SetActive(true);
+            scoreChecker.SetActive(true);
         }
+    }
+
+    public void OnRestart()
+    {
+        SceneManager.LoadSceneAsync(1);
+    }
+
+    public void OnMainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
     }
 }

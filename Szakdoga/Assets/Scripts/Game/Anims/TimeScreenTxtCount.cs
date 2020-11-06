@@ -30,9 +30,7 @@ public class TimeScreenTxtCount : MonoBehaviour
         while (TimeSpan.Parse(text.text) < LevelManager.time.Time)
         {
             i += new TimeSpan(0, 0, 53);
-            Debug.Log(i);
             text.text = i.Hours + ":" + i.Minutes + ":" + i.Seconds;
-            Debug.Log(text.text);
             yield return null;
         }
         text.text = LevelManager.time.Time.ToString();

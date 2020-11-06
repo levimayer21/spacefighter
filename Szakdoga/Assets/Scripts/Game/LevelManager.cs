@@ -1,23 +1,27 @@
 ﻿using System;
+using System.Diagnostics;
 using TMPro;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
+    public static ClockTime time;
+    public static string playerName;
     public static bool isMoveEnabled;
     public static bool lostALife;
-    public static float enemySpeed;
-    public static int round;
-    public static int usableEnemyCount;
     public static bool spawnerSet;
     public static bool roundEnded;
     public static bool playerLost;
-    public static ClockTime time;
+    public static float enemySpeed;
+    public static int round;
+    public static int usableEnemyCount;
 
     public static int playerHealth;
     public static int points;
     public GameObject enemySpawner;
+
+    public static Stopwatch sp;
 
     int backupScore;
     GameObject spawner;
@@ -29,15 +33,17 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        sp = new Stopwatch();
+        sp.Start();
         playerLost = false;
         roundEnded = false;
         spawnerSet = false;
         instance = this;
-        round = 4;
+        round = 0;
         isMoveEnabled = true;
         lostALife = false;
-        playerHealth = 3;
-        points = 0;
+        playerHealth = 1;
+        points = 49000;
     }
 
     private void Update()
@@ -64,8 +70,8 @@ public class LevelManager : MonoBehaviour
         {
             round++;
         }
-        usableEnemyCount = 20 + (3*round);
-        enemySpeed = -2.3f * (0.3f * round);
+        usableEnemyCount = 20 + (2*round);
+        enemySpeed = -10f * (0.14f * round);
         backupScore = points;
     }
 

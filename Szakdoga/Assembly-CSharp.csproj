@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DLLs\SqlTasks.cs" />
+    <Compile Include="Assets\NameAccept.cs" />
     <Compile Include="Assets\Scripts\BackgroundMovement.cs" />
     <Compile Include="Assets\Scripts\ClockTime.cs" />
     <Compile Include="Assets\Scripts\Game\Anims\GameAnim.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Assets\Scripts\Game\Anims\TimeScreenTxtCount.cs" />
     <Compile Include="Assets\Scripts\Game\Bullet.cs" />
     <Compile Include="Assets\Scripts\Game\DestroyAnim.cs" />
+    <Compile Include="Assets\Scripts\Game\EndScreen\NameUpDownSelect.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\Normie.cs" />
@@ -127,34 +130,34 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\DLLs\System.Buffers.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\DLLs\Google.Protobuf.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\DLLs\K4os.Hash.xxHash.xml" />
+    <None Include="Assets\DLLs\K4os.Compression.LZ4.Streams.xml" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\DLLs\K4os.Hash.xxHash.xml" />
-    <None Include="Assets\DLLs\Renci.SshNet.xml" />
-    <None Include="Assets\DLLs\System.Buffers.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\DLLs\System.Memory.xml" />
     <None Include="Assets\DLLs\MySql.Data.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\DLLs\System.Memory.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\DLLs\System.Runtime.CompilerServices.Unsafe.xml" />
-    <None Include="Assets\DLLs\K4os.Compression.LZ4.Streams.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\DLLs\System.Runtime.CompilerServices.Unsafe.xml" />
+    <None Include="Assets\DLLs\Renci.SshNet.xml" />
+    <None Include="Assets\DLLs\K4os.Compression.LZ4.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\DLLs\K4os.Compression.LZ4.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\DLLs\Google.Protobuf.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\DLLs\System.Numerics.Vectors.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\DLLs\System.Numerics.Vectors.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="UnityEngine">
