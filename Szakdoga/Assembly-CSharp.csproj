@@ -63,36 +63,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BackgroundMovement.cs" />
-    <Compile Include="Assets\Scripts\ClockTime.cs" />
+    <Compile Include="Assets\Scripts\EndScene\GameOverAnimContr.cs" />
+    <Compile Include="Assets\Scripts\EndScene\GameOverTxtAnimContr.cs" />
+    <Compile Include="Assets\Scripts\EndScene\NameAccept.cs" />
+    <Compile Include="Assets\Scripts\EndScene\NameUpDownSelect.cs" />
+    <Compile Include="Assets\Scripts\EndScene\ScoreScreenEndAnimation.cs" />
+    <Compile Include="Assets\Scripts\EndScene\ScoreScreenTextCount.cs" />
+    <Compile Include="Assets\Scripts\EndScene\TimeScreenAnimContr.cs" />
+    <Compile Include="Assets\Scripts\EndScene\TimeScreenTxtCount.cs" />
+    <Compile Include="Assets\Scripts\ErrorHandling\NetworkConnectError.cs" />
     <Compile Include="Assets\Scripts\Game\Anims\GameAnim.cs" />
-    <Compile Include="Assets\Scripts\Game\Anims\GameOverAnimContr.cs" />
-    <Compile Include="Assets\Scripts\Game\Anims\GameOverTxtAnimContr.cs" />
-    <Compile Include="Assets\Scripts\Game\Anims\ScoreScreenEndAnimation.cs" />
-    <Compile Include="Assets\Scripts\Game\Anims\ScoreScreenTextCount.cs" />
-    <Compile Include="Assets\Scripts\Game\Anims\TimeScreenAnimContr.cs" />
-    <Compile Include="Assets\Scripts\Game\Anims\TimeScreenTxtCount.cs" />
-    <Compile Include="Assets\Scripts\Game\Bullet.cs" />
-    <Compile Include="Assets\Scripts\Game\DestroyAnim.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\EnemyBullet.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\Normie.cs" />
+    <Compile Include="Assets\Scripts\Game\Enemies\Spawner.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\ThreeP.cs" />
     <Compile Include="Assets\Scripts\Game\Enemies\ThreePSmall.cs" />
-    <Compile Include="Assets\Scripts\Game\GameEvent.cs" />
-    <Compile Include="Assets\Scripts\Game\GameOver.cs" />
-    <Compile Include="Assets\Scripts\Game\HealthSystem.cs" />
-    <Compile Include="Assets\Scripts\Game\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\EventHandling\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Game\GameManagement\GameOver.cs" />
+    <Compile Include="Assets\Scripts\Game\GameManagement\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Game\GameManagement\ScoreBoard.cs" />
     <Compile Include="Assets\Scripts\Game\PauseMenu\PauseEnd.cs" />
     <Compile Include="Assets\Scripts\Game\PauseMenu\PauseMenu.cs" />
-    <Compile Include="Assets\Scripts\Game\PlayerBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Game\ScoreBoard.cs" />
-    <Compile Include="Assets\Scripts\Game\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Game\Player\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Game\Player\DestroyAnim.cs" />
+    <Compile Include="Assets\Scripts\Game\Player\HealthSystem.cs" />
+    <Compile Include="Assets\Scripts\Game\Player\PlayerBehaviour.cs" />
+    <Compile Include="Assets\Scripts\General\BackgroundMovement.cs" />
+    <Compile Include="Assets\Scripts\General\ClockTime.cs" />
     <Compile Include="Assets\Scripts\MainMenu\LoginFlash.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuAnim.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuEvent.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuInteraction.cs" />
     <Compile Include="Assets\Scripts\MainMenu\OnKeyPress.cs" />
+    <Compile Include="Assets\Scripts\Networking\SqlTasks.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -128,32 +132,22 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\DLLs\Google.Protobuf.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\DLLs\K4os.Hash.xxHash.xml" />
-    <None Include="Assets\DLLs\Renci.SshNet.xml" />
-    <None Include="Assets\DLLs\System.Buffers.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\DLLs\System.Memory.xml" />
-    <None Include="Assets\DLLs\MySql.Data.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\DLLs\System.Runtime.CompilerServices.Unsafe.xml" />
-    <None Include="Assets\DLLs\K4os.Compression.LZ4.Streams.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\DLLs\K4os.Compression.LZ4.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\DLLs\System.Numerics.Vectors.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
@@ -333,48 +327,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="BouncyCastle.Crypto">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/BouncyCastle.Crypto.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="K4os.Compression.LZ4">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/K4os.Compression.LZ4.dll</HintPath>
-    </Reference>
-    <Reference Include="K4os.Compression.LZ4.Streams">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/K4os.Compression.LZ4.Streams.dll</HintPath>
-    </Reference>
-    <Reference Include="K4os.Hash.xxHash">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/K4os.Hash.xxHash.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/MySql.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Renci.SshNet">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/Renci.SshNet.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Buffers">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Ubiety.Dns.Core">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/Ubiety.Dns.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityMySQL">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/UnityMySQL.dll</HintPath>
-    </Reference>
-    <Reference Include="Zstandard.Net">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Assets/DLLs/Zstandard.Net.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -728,85 +680,85 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.14f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/leven/Desktop/spacefighter/Szakdoga/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/leven/Desktop/spacefighterUWR/SpaceFighter/Szakdoga/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

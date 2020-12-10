@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         {
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
-            GameIsPaused = true; 
+            GameIsPaused = true;
         }
     }
 
@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
         if (GameIsPaused)
         {
             pauseMenuUI.SetActive(false);
-            Instantiate(countDown, gameObject.transform); 
+            Instantiate(countDown, gameObject.transform);
         }
     }
 

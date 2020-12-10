@@ -1,5 +1,4 @@
-﻿using Org.BouncyCastle.Crypto;
-using UnityEngine;
+﻿using UnityEngine;
 
 public abstract class EnemyBehaviour : MonoBehaviour
 {
@@ -15,7 +14,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
         health--;
         if (health < 1)
         {
-            LevelManager.points += points;
+            LevelManager.score += points;
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
@@ -24,7 +23,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
     void Update()
     {
         transform.position = new Vector2(Mathf.Clamp(transform.position.x, -2.8f, 1f), transform.position.y);
-        if (transform.position.y < screenBounds.y)
+        if (transform.position.y < screenBounds.y || transform.position.x > 4.5f || transform.position.x < -4.5f)
         {
             Destroy(gameObject);
         }
@@ -34,7 +33,10 @@ public abstract class EnemyBehaviour : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
                 break;
             default:
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                if (GetType().ToString() != "ThreePSmall")
+                {
+                    GetComponent<Rigidbody2D>().velocity = new Vector2(0, LevelManager.enemySpeed);
+                }
                 break;
         }
     }

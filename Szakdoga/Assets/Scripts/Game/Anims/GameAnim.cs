@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.XR.WSA.Input;
 
 public class GameAnim : MonoBehaviour
 {
@@ -44,7 +42,7 @@ public class GameAnim : MonoBehaviour
         controlGUI.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         GameEvent.gameEvent.RoundStart();
-    }    
+    }
 
     void ActivateRoundStart()
     {

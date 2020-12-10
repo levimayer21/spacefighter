@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenuAnim : MonoBehaviour
 {
@@ -47,11 +45,11 @@ public class MainMenuAnim : MonoBehaviour
         {
             if (ship.anchoredPosition.y < shipFinal.anchoredPosition.y)
             {
-                ship.anchoredPosition += new Vector2(0, 2.5f);
+                ship.anchoredPosition += new Vector2(0, 7f);
             }
             if (menu.anchoredPosition.y < menuFinal.anchoredPosition.y)
             {
-                menu.anchoredPosition += new Vector2(0, 2.5f);
+                menu.anchoredPosition += new Vector2(0, 7f);
             }
             yield return null;
         }
@@ -73,7 +71,6 @@ public class MainMenuAnim : MonoBehaviour
             }
             if (guide.anchoredPosition.y == guideStartPoint.y)
             {
-                Debug.Log("Done, guide disabled");
                 guideIsUp = false;
             }
         }
@@ -86,7 +83,6 @@ public class MainMenuAnim : MonoBehaviour
             }
             if (guide.anchoredPosition.y == guideFinal.anchoredPosition.y)
             {
-                Debug.Log("Done, guide Enabled");
                 guideIsUp = true;
             }
         }

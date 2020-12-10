@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +14,11 @@ public class OnKeyPress : MonoBehaviour
             MenuEvent.menuEvent.Press();
             Destroy(gameObject.GetComponent<OnKeyPress>());
         }
-    }
+        string szoveg1 = "asd";
+        string szoveg2 = "fgh";
 
+        string osszeadva = $"{szoveg1}{szoveg2}";
+        Console.WriteLine("{0}{1}", szoveg1, szoveg2);
+        Console.WriteLine(szoveg1 + szoveg2);
+    }
 }

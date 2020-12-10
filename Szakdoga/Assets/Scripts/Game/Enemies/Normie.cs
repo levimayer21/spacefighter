@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Normie : EnemyBehaviour
@@ -19,7 +18,7 @@ public class Normie : EnemyBehaviour
     {
         if (LevelManager.round > 3)
         {
-            if (Random.Range(0,101) >= 70)
+            if (Random.Range(0, 101) >= 70)
             {
                 Instantiate(enemyBullet, gameObject.transform.position, Quaternion.identity);
             }
@@ -28,7 +27,7 @@ public class Normie : EnemyBehaviour
 
     IEnumerator ShootActuator()
     {
-        yield return new WaitForSecondsRealtime(Random.Range(0,3));
+        yield return new WaitForSecondsRealtime(Random.Range(0, 3));
         ShootRandomly();
     }
 }
