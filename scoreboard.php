@@ -14,29 +14,31 @@
                 </thead>
                 <tbody>
                     <?php
-                        $mysql = new mysqli('localhost','php','asd123');
+                        $mysql = new mysqli('localhost','spacefighter','SfnfXVcb6oAoEvyU');
 
                         if ($mysql->connect_errno)
                         {
-                            printf("<p>Connect failed: %s\n</p>", $mysql->connect_error);
-                            exit();
-                        }
-
-                        if ($result = $mysql->query("SELECT name,score,time FROM scoreboard.playerscores ORDER BY score desc LIMIT 5;"))
-                        {
-                            $placement = 1;
-                            foreach($result as $item)
-                            {
-                                //$item = array_values($item);
-                                printf("<tr><td>".$placement."</td><td>".$item['name']."</td><td>".$item['score']."</td><td>".$item['time']."</td></tr>");
-                                $placement++;
-                            }
+                            printf("<p>Connection failed: %s\n</p>");
                         }
                         else
                         {
-                            print('f');
-                        }
+                            if ($result = $mysql->query("SELECT name,score,time FROM scoreboard.playerscores ORDER BY score desc LIMIT 10;"))
+                            {
+                                $placement = 1;
+                                foreach($result as $item)
+                                {
+                                    //$item = array_values($item);
+                                    printf("<tr><td>".$placement."</td><td>".$item['name']."</td><td>".$item['score']."</td><td>".$item['time']."</td></tr>");
+                                    $placement++;
+                                }
+                                $result->close();
 
+                            }
+                            else
+                            {
+                                print('f');
+                            }
+                        }
                         $mysql->close();
                     ?>
                 </tbody>

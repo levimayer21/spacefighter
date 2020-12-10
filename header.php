@@ -23,7 +23,6 @@
                     <ul class="right hide-on-med-and-down">
                         <li><a class="white-text waves-effect waves-light" href="game.php">Játék</a></li>
                         <li><a class="white-text waves-effect waves-light" href="scoreboard.php">Ponttáblázat</a></li>
-                        <li><a class="white-text waves-effect waves-light" href="#">Irányítás</a></li>
                     </ul>
                 </div>
             </nav>
@@ -32,6 +31,5 @@
                 <li><h2 class="center-align">Menü</h2></li>
                 <li><a class="waves-effect waves-light" href="game.php">Játék</a></li>
                 <li><a class="waves-effect waves-light" href="scoreboard.php">Ponttáblázat</a></li>
-                <li><a class="waves-effect waves-light" href="#">Irányítás</a></li>
             </ul>
         </header>
