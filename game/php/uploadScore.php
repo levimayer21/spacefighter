@@ -1,28 +1,38 @@
 <?php
-const host = 'localhost';
-const username = 'spacefighter';
-const pass = 'SfnfXVcb6oAoEvyU';
+$name = (string) $_POST['name'];
+$score = (string) $_POST['score'];
+$time = (string) $_POST['time'];
+$playerid = sha1($name . $score . $time);
 
-$name = $_POST('name');
-$score = $_POST('score');
-$time = $_POST('time');
-$playerid = sha1($name + $score + $time);
+$conn = new mysqli('localhost','spacefighter','spacedatabase');
+$insert = 'INSERT INTO `playerscores` (`playerid`, `name`, `score`, `time`) VALUES (' . $playerid . ',' . $name . ',' . $score . ',' . $time .');';
 
-$mysql = new mysqli(host,username,pass);
-
-if ($mysql->connect_errno)
+if ($conn->connect_errno)
 {
-    echo("0");
+    echo("Connection Error: " . $conn->connect_error);
 }
 else
 {
-    if ($result = $mysql->query("INSERT INTO `playerscores` (`playerid`, `name`, `score`, `time`) VALUES ($playerid, $name, $score, $time )"))
+    try
     {
-        echo($playerid);
-        $result->close();
+        if ($dbselect = mysqli_select_db($conn, 'playerscores'))
+        {
+            if(mysqli_query($conn, $insert))
+            {
+                echo($playerid);
+            }
+            else
+            {
+                echo('Insert Error: ' . mysqli_error($conn));
+            }
+        }
+        else
+        {
+            echo("DB selection error: " . $dbselect);
+        }
     }
-    else
+    catch (\MongoDB\Driver\Exception\Exception $ex)
     {
-        echo("0");
+        echo($ex->getMessage());
     }
 }

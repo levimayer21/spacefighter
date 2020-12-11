@@ -14,7 +14,7 @@
                 </thead>
                 <tbody>
                     <?php
-                        $mysql = new mysqli('localhost','spacefighter','SfnfXVcb6oAoEvyU');
+                        $mysql = new mysqli('localhost','spacefighter','spacedatabase');
 
                         if ($mysql->connect_errno)
                         {

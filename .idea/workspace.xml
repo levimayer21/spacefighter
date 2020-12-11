@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c69e1484-aae9-49a4-8be8-2a4d42ff6e80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game/php/checkPlacement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/game.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/php/checkPlacement.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/php/checkPlacement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/php/scoreboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/php/scoreboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/php/uploadScore.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/php/uploadScore.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scoreboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607593078020</updated>
-      <workItem from="1607593079692" duration="9953000" />
+      <workItem from="1607593079692" duration="10556000" />
+      <workItem from="1607696477946" duration="7103000" />
     </task>
     <servers />
   </component>
@@ -68,5 +70,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
