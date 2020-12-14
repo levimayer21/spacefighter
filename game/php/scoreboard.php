@@ -1,6 +1,6 @@
 <?php
 
-$mysql = new mysqli('localhost','spacefighter','spacedatabase');
+$mysql = new mysqli('localhost','spacefighter','spacedatabase', 'scoreboard');
 
 if ($mysql->connect_errno)
 {
@@ -9,14 +9,9 @@ if ($mysql->connect_errno)
 
 else
 {
-    if ($result = $mysql->query("SELECT name,score,time FROM scoreboard.playerscores ORDER BY score desc LIMIT 1;"))
+    if ($result = $mysql->query("SELECT name,score,time FROM playerscores ORDER BY score desc LIMIT 1;"))
     {
-        foreach($result as $item)
-        {
-            echo($item["score"]);
-        }
-        $result->close();
-
+        echo($result->fetch_array()["score"]);
     }
     else
     {

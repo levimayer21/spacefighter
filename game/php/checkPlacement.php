@@ -1,7 +1,7 @@
 <?php
 $playerid = $_POST["playerid"];
 
-$mysql = new mysqli('localhost','spacefighter','spacedatabase');
+$mysql = new mysqli('localhost','spacefighter','spacedatabase', 'scoreboard');
 
 if ($mysql->connect_errno)
 {
@@ -9,20 +9,28 @@ if ($mysql->connect_errno)
 }
 else
 {
-    if ($result = $mysql->query("SELECT * FROM `playerscores` ORDER BY `score` DESC;"))
+    if ($result = $mysql->query("SELECT `playerid` FROM `playerscores` ORDER BY `score` DESC LIMIT 10;"))
     {
         $scoreboard = array();
-        for ($i = 1; $i < $result.count(); $i++)
+        $i = 1;
+        while($arr = $result->fetch_array())
         {
-            if ($result[$i-1]["playerid"] == $playerid)
+            if ($arr["playerid"] == $playerid)
             {
-                echo("Placement: ");
+                echo("Your placement: " . $i . ".\nGGWP");
+                break;
             }
             else
             {
-                echo("burh");
+                $i++;
             }
         }
-        echo("-1");
+        if ($i > $result->num_rows)
+        {
+            echo("You didn't get into the top ". $result->num_rows .".\nBetter luck next time!");
+        }
     }
 }
+$mysql->close();
+
+?>

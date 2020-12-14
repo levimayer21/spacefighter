@@ -2,37 +2,28 @@
 $name = (string) $_POST['name'];
 $score = (string) $_POST['score'];
 $time = (string) $_POST['time'];
-$playerid = sha1($name . $score . $time);
+$playerid = sha1($name . $score . $time . date("ymdHis"));
 
-$conn = new mysqli('localhost','spacefighter','spacedatabase');
-$insert = 'INSERT INTO `playerscores` (`playerid`, `name`, `score`, `time`) VALUES (' . $playerid . ',' . $name . ',' . $score . ',' . $time .');';
+$conn = new mysqli('localhost','spacefighter','spacedatabase', 'scoreboard');
+$insert = 'INSERT INTO `playerscores` (`playerid`, `name`, `score`, `time`) VALUES ("' . $playerid . '","' . $name . '","' . $score . '","' . $time . '");';
+
 
 if ($conn->connect_errno)
 {
-    echo("Connection Error: " . $conn->connect_error);
+    echo("Connection Error");
 }
 else
 {
-    try
+    if ($result = $conn->query($insert))
     {
-        if ($dbselect = mysqli_select_db($conn, 'playerscores'))
-        {
-            if(mysqli_query($conn, $insert))
-            {
-                echo($playerid);
-            }
-            else
-            {
-                echo('Insert Error: ' . mysqli_error($conn));
-            }
-        }
-        else
-        {
-            echo("DB selection error: " . $dbselect);
-        }
+        echo($playerid);
     }
-    catch (\MongoDB\Driver\Exception\Exception $ex)
+    else
     {
-        echo($ex->getMessage());
+        echo("Process error");
     }
 }
+
+$conn->close();
+
+?>

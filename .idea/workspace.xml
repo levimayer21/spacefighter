@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c69e1484-aae9-49a4-8be8-2a4d42ff6e80" name="Default Changelist" comment="">
+    <list default="true" id="c69e1484-aae9-49a4-8be8-2a4d42ff6e80" name="Default Changelist" comment="20201211 PHP buggy, DB selection, empty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/php/checkPlacement.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/php/checkPlacement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/php/scoreboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/php/scoreboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/php/uploadScore.php" beforeDir="false" afterPath="$PROJECT_DIR$/game/php/uploadScore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoreboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/game/php/uploadScore.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/game/php/scoreboard.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/scoreboard.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/game/php/checkPlacement.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/game.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
@@ -53,8 +56,17 @@
       <option name="presentableId" value="Default" />
       <updated>1607593078020</updated>
       <workItem from="1607593079692" duration="10556000" />
-      <workItem from="1607696477946" duration="7103000" />
+      <workItem from="1607696477946" duration="7200000" />
+      <workItem from="1607972576051" duration="7175000" />
     </task>
+    <task id="LOCAL-00001" summary="20201211 PHP buggy, DB selection, empty">
+      <created>1607720662149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607720662149</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +83,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20201211 PHP buggy, DB selection, empty" />
+    <option name="LAST_COMMIT_MESSAGE" value="20201211 PHP buggy, DB selection, empty" />
   </component>
 </project>
