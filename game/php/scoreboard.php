@@ -11,7 +11,14 @@ else
 {
     if ($result = $mysql->query("SELECT name,score,time FROM playerscores ORDER BY score desc LIMIT 1;"))
     {
-        echo($result->fetch_array()["score"]);
+        if ($result->num_rows == 0)
+        {
+            echo("NOHS");
+        }
+        else 
+        {
+            echo($result->fetch_array()["score"]);
+        }
     }
     else
     {

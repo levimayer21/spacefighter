@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="footer-copyright black zerooverflow">
-                © 2020 Mayer Levente
+                © 2020-2021 Mayer Levente
             </div>
         </footer>
 

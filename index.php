@@ -10,7 +10,7 @@
         <div id="content1" class="container" style="overflow-x: visible;">
             <div id="gameinfo" class="row valign-wrapper">
                 <div class="col s12 center">
-                    <h4 class="orbitron">A Játékról</h4>
+                    <h4 class="">A Játékról</h4>
                     <p class="flow-text">A "SpaceFighter" nevezetű játék elkészítését egy régebbi NES/SNES-es játék ihlette meg. Úgy gondoltam jó lenne ezt a remekművet megtisztelnie egy újradolgozott verzióval, kicsit felfrissíteni az emberek emlékeit akik ezzel a játékkal valaha játszottak.</p>
                 </div>
             </div>
@@ -34,38 +34,38 @@
             <div class="nooverflow">
                 <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
-                        <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
+                        <img id="threep" src="img/3panim/3p-enemy.png" alt="3penemy" class="responsive-img enemypic">
                     </div>
                     <div class="col s8 m7 right-align">
-                        <h4>Versenyezz!</h4>
-                        <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
+                        <h4>Lorem Ipsum!</h4>
+                        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                 </div>
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
+                <div id="interstuff" class="row valign-wrapper" data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s8 m7 right-align">
-                        <h4>Versenyezz!</h4>
-                        <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
+                        <h4>Lorem Ipsum!</h4>
+                        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                     <div class="col s4 m5 center">
-                        <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
+                        <img src="img/Normie.png" alt="Normie" class="responsive-img enemypic">
                     </div>
                 </div>
                 <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
-                        <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
+                        <img src="img/Normie.png" alt="Normie" class="responsive-img enemypic">
                     </div>
                     <div class="col s8 m7 right-align">
-                        <h4>Versenyezz!</h4>
-                        <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
+                        <h4>Lorem Ipsum!</h4>
+                        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                 </div>            
                 <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s8 m7 right-align">
-                        <h4>Versenyezz!</h4>
-                        <p class="flow-text">Versenyezz barátokkal, családdal, vagy véletlenszerűen választott játékosokkal!</p>
+                        <h4>Lorem Ipsum!</h4>
+                        <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     </div>
                     <div class="col s4 m5 center">
-                        <img id="enemypic" src="img/galagaenemy.png" alt="galagaenemy" class="responsive-img">
+                        <img src="img/Normie.png" alt="Normie" class="responsive-img enemypic">
                     </div>
                 </div>
             </div>

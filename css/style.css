@@ -3,27 +3,6 @@
     --secondary: #0E0E0E;
 }
 
-#spacenav a
-{
-    font-family: 'Orbitron', sans-serif;
-    background: rgb(0,0,0,0.3);
-}
-
-#nav-mobile
-{
-    background: var(--secondary);
-}
-
-#nav-mobile h2
-{
-    font-family: 'Orbitron', sans-serif;
-}
-
-#nav-mobile h2, #nav-mobile a
-{
-    color: white;
-}
-
 body 
 {
     display: flex;
@@ -36,10 +15,12 @@ main
     flex: 1 0 auto;
 }
 
-.parallax-container
+@font-face 
 {
-    height: 100px;
-    margin-bottom: 25px;
+    font-family: "Barcade Brawl Regular";
+    src:url("../font/barcade-brawl.eot") format("eot"),url("../font/barcade-brawl.woff") format("woff"),url("../font/barcade-brawl.ttf") format("truetype"),url("../font/barcade-brawl.svg#Barcade-Brawl") format("svg");
+    font-weight:normal;
+    font-style:normal;
 }
 
 @media only screen and (min-width: 995px)
@@ -56,6 +37,49 @@ main
     0% {-webkit-transform: translate(120vw); transform: translate(120vw);}
     100% {-webkit-transform: translate(-50vw); transform: translate(-50vw);}
 }
+
+@keyframes threepanim
+{
+    0% {src: url("../img/3panim/3p-enemy.png");}
+    25% {src: url("../img/3panim/3panim1.png");}
+    50% {src: url("../img/3panim/3panim2.png");}
+    100% {src: url("../img/3panim/3panim3.png");}
+}
+
+#spacenav a
+{
+    font-family: "Barcade Brawl Regular";
+    background: rgb(0,0,0,0.3);
+    font-size: 110%;
+    font-weight: normal;
+}
+
+#spacenav ul li a
+{
+    font-family: "Barcade Brawl Regular";
+    background: rgb(0,0,0,0.3);
+    font-size: 75%;
+    font-weight: normal;
+}
+
+#nav-mobile
+{
+    background: var(--secondary);
+}
+
+#nav-mobile h2
+{
+    font-family: "Barcade Brawl Regular";
+    font-size: 100%;
+    font-weight: normal;
+}
+
+#nav-mobile h2, #nav-mobile a
+{
+    color: white;
+}
+
+
 
 #galagapic
 {
@@ -85,6 +109,18 @@ main
     display: none;
     z-index: 99;
 }
+
+.enemypic
+{
+    max-height: 350px;
+}
+
+.parallax-container
+{
+    height: 100px;
+    margin-bottom: 25px;
+}
+
 
 .nooverflow
 {
