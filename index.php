@@ -5,7 +5,7 @@
     <!-- Content -->
     <main>
         <div class="parallax-container">
-                <div class="parallax"><im class="responsive-img" src="img/universe.jpg"></div>
+                <div class="parallax"><img class="responsive-img" src="img/universe.jpg"></div>
         </div>
         <div id="content1" class="container" style="overflow-x: visible;">
             <div id="gameinfo" class="row valign-wrapper">
