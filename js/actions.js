@@ -1,6 +1,13 @@
 var navHeight = document.getElementById("spacenav").clientHeight + "px";
 var marHeight = (document.getElementsByTagName("body")[0].clientHeight / 45) + "px";
 var navWidth = document.getElementsByTagName("nav")[0].clientWidth;
+var parallax = document.getElementsByClassName("parallax-container");
+
+
+//Event Listeners
+window.addEventListener("scroll", scrollFunction);
+window.addEventListener("load", parallaxHeightChange);
+window.addEventListener("resize", parallaxHeightChange);
 
 if(navWidth < 601)
 {
@@ -26,8 +33,6 @@ document.body.style.setProperty("--shipspeed", speedtosize + "s");
 //Scroll funkció, érzékeli ha a toTop gombnak meg kell-e jelennie
 var topBtn = document.getElementById("toTopButton");
 
-window.addEventListener("scroll", scrollFunction);
-
 function scrollFunction() 
 {
     if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20)
@@ -43,6 +48,14 @@ function scrollFunction()
 function toTop()
 {
     document.querySelector('header').scrollIntoView({behavior: "smooth"});
+}
+
+function parallaxHeightChange()
+{
+    for (i = 0; i < parallax.length; i++)
+    {
+        parallax[i].clientHeight =  (window.innerHeight - document.getElementById("spacenav").clientHeight - document.getElementById("content1").innerHeight) / 2;
+    }
 }
 
 //jQuery
