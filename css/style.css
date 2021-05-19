@@ -23,14 +23,14 @@ main
     font-style:normal;
 }
 
-@media only screen and (min-width: 995px)
+/*@media only screen and (min-width: 995px)
 {
     .parallax-container
     {
         height: 200px;
         margin-bottom: 25px;
     }
-}
+}*/
 
 @keyframes righttoleft
 {
@@ -118,6 +118,7 @@ main
 .parallax-container
 {
     height: 125px;
+    margin: 0px;
 }
 
 
