@@ -14,6 +14,7 @@
         <meta name="revisit-after" content="2">
         <link rel="icon" href="img/icons/Spaceship192186icon.png">
         <link rel="stylesheet" href="css/materialize.css" type="text/css" media="screen,projection">
+        <link rel="manifest" href="manifest.webmanifest">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">

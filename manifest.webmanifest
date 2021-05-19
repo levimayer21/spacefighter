@@ -7,28 +7,28 @@
     "description": "Space against you, you against Space",
     "icons": 
     [{
-        "src": "images/icons/Spacheship7270icon.pnh",
-        "sizes": "72x20",
+        "src": "images/icons/sh72ico.png",
+        "sizes": "72x72",
         "type": "image/png"
     },
     {
-        "src": "images/icons/Spacheship9693icon.pnh",
-        "sizes": "96x93",
+        "src": "images/icons/sh96ico.png",
+        "sizes": "96x96",
         "type": "image/png"
     },
     {
-        "src": "images/icons/Spacheship144140icon.pnh",
-        "sizes": "144x140",
+        "src": "images/icons/sh144ico.png",
+        "sizes": "144x144",
         "type": "image/png"
     },
     {
-        "src": "images/icons/Spacheship168163icon.pnh",
-        "sizes": "168x163",
+        "src": "images/icons/sh168ico.png",
+        "sizes": "168x168",
         "type": "image/png"
     },
     {
-        "src": "images/icons/Spacheship192186icon.pnh",
-        "sizes": "192x186",
+        "src": "images/icons/sh192ico.png",
+        "sizes": "192x192",
         "type": "image/png"
     }]
 }
