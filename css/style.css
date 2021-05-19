@@ -1,6 +1,7 @@
 :root
 {
     --secondary: #0E0E0E;
+    --parallaxHeight: 0px;
 }
 
 body 
@@ -117,6 +118,7 @@ main
 
 .parallax-container
 {
+    height: var(--parallaxHeight);
     margin: 0px;
 }
 

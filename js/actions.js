@@ -1,7 +1,6 @@
 var navHeight = document.getElementById("spacenav").clientHeight + "px";
 var marHeight = (document.getElementsByTagName("body")[0].clientHeight / 45) + "px";
 var navWidth = document.getElementsByTagName("nav")[0].clientWidth;
-var parallax = document.getElementsByClassName("parallax-container");
 
 
 //Event Listeners
@@ -52,10 +51,7 @@ function toTop()
 
 function parallaxHeightChange()
 {
-    for (i = 0; i < parallax.length; i++)
-    {
-        parallax[i].clientHeight =  (window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2;
-    }
+    getComputedStyle(document.documentElement).getPropertyValue('--parallaxHeight') =  ((window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2) + 'px';
 }
 
 //jQuery
