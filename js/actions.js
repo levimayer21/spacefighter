@@ -26,7 +26,7 @@ document.body.style.setProperty("--shipspeed", speedtosize + "s");
 //Scroll funkció, érzékeli ha a toTop gombnak meg kell-e jelennie
 var topBtn = document.getElementById("toTopButton");
 
-window.onscroll = scrollFunction();
+window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() 
 {

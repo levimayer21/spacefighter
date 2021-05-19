@@ -17,7 +17,8 @@
             <div id="videocard" class="row center-align">
                 <ul class="collapsible popout secondarycol z-depth-3">
                     <li>
-                        <div class="collapsible-header secondarycol valign-wrapper"><h4 class="white-text center-block orbitron">Videó a klasszikusról</h4><br>             <i class="large material-icons white-text center-block">expand_more</i></div>
+                        <div class="collapsible-header secondarycol valign-wrapper"><h4 class="white-text center-block orbitron">Videó a klasszikusról</h4><br>             
+                        <i class="large material-icons white-text center-block">expand_more</i></div>
                         <div class="collapsible-body">
                             <div class="video-container">
                                 <iframe class="responsive-video" width="560" height="315" src="https://www.youtube.com/embed/dvjapcHsqXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
