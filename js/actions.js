@@ -54,7 +54,7 @@ function parallaxHeightChange()
 {
     for (i = 0; i < parallax.length; i++)
     {
-        parallax[i].clientHeight =  ((window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2);
+        parallax[i].clientHeight =  (window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2;
     }
 }
 
