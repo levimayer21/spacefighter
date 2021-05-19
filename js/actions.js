@@ -53,18 +53,3 @@ $(document).ready(function()
     $('.collapsible').collapsible();
     $('.parallax').parallax();
 });
-
-function animate(array, i)
-{
-    document.getElementById("threep").srcset = array[i];
-    if (array.length > i)
-    {
-        setTimeout(function() {animate(array, i++);}, 2000);
-    }
-    else
-    {
-        setTimeout(function() {animate(array, 0);}, 2000);
-    }
-}
-
-animate(["../img/3panim/3p-enemy.png", "../img/3panim/3panim1.png", "../img/3panim/3panim2.png","../img/3panim/3panim3.png"], 0)
