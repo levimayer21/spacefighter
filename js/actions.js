@@ -51,7 +51,7 @@ function toTop()
 
 function parallaxHeightChange()
 {
-    getComputedStyle(document.documentElement).setProperty("--parallaxHeight", ((window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2) + 'px');
+    document.documentElement.style.setProperty("--parallaxHeight", ((window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2) + 'px');
 }
 
 //jQuery
