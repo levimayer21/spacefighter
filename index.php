@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="parallax-container">
-            <div class="parallax"><img class="responsive-img" src="img/universe.jpg"></div>
+            <div class="parallax"><img class="responsive-img" src="img/seamless space.PNG"></div>
         </div>
         <div id="content2" class="container" style="overflow-x: visible;">
             <div class="nooverflow">

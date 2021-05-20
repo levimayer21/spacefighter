@@ -1,7 +1,7 @@
 var navHeight = document.getElementById("spacenav").clientHeight + "px";
 var marHeight = (document.getElementsByTagName("body")[0].clientHeight / 45) + "px";
 var navWidth = document.getElementsByTagName("nav")[0].clientWidth;
-
+var planets = ["/img/planet1.png"];
 
 //Event Listeners
 window.addEventListener("scroll", scrollFunction);
@@ -53,6 +53,12 @@ function parallaxHeightChange()
 {
     document.documentElement.style.setProperty("--parallaxHeight", ((window.innerHeight - document.getElementById("top").clientHeight - document.getElementById("content1").clientHeight) / 2) + 'px');
 }
+
+/*function randomNavPlanet()
+{
+    Math.random() * 1;  
+
+}*/
 
 //jQuery
 

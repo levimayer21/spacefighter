@@ -1,3 +1,8 @@
+<?php
+ini_set("session.cookie_httponly", TRUE);
+ini_set("session.cookie_secure", TRUE);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
