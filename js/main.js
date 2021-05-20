@@ -1,4 +1,4 @@
-const swURL = require("./sw.js")
+const swURL = "./sw.js"
 
 if ('serviceWorker' in navigator)
 {
