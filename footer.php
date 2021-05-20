@@ -24,6 +24,7 @@
         </footer>
 
         <!-- JS hátul optimalizációs célokból-->
+        <script type="text/javascript" src="js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>

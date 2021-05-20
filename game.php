@@ -1,3 +1,6 @@
+<?php
+  require "sitesettings.php";
+?>
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -20,4 +23,5 @@
       <div id="unityContainer"></div>
     </div>
   </body>
+  <script type="text/javascript" scr="js/main.js"></script>
 </html>
