@@ -25,10 +25,10 @@
 
         <!-- JS hátul optimalizációs célokból-->
         <script type="text/javascript" src="js/main.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>
-        <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
         <script>
           AOS.init();
         </script>

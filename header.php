@@ -18,7 +18,7 @@
         <link rel="icon" href="img/icons/sh192ico.png">
         <link rel="stylesheet" href="css/materialize.min.css" type="text/css" media="screen,projection">
         <link rel="manifest" href="manifest.webmanifest">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/aos.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" type="text/css">

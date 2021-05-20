@@ -9,7 +9,7 @@
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>SpaceFighter</title>
-    <link rel="icon" href="img/icons/Spaceship192186icon.png">
+    <link rel="icon" href="img/icons/sh192ico.png">
     <link rel="stylesheet" href="game/style/style.css">
     <script src="game/TemplateData/UnityProgress.js"></script>
     <script src="game/Build/UnityLoader.js"></script>
