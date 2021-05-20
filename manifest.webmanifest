@@ -7,27 +7,27 @@
     "description": "Space against you, you against Space",
     "icons": 
     [{
-        "src": "images/icons/sh72ico.png",
+        "src": "img/icons/sh72ico.png",
         "sizes": "72x72",
         "type": "image/png"
     },
     {
-        "src": "images/icons/sh96ico.png",
+        "src": "img/icons/sh96ico.png",
         "sizes": "96x96",
         "type": "image/png"
     },
     {
-        "src": "images/icons/sh144ico.png",
+        "src": "img/icons/sh144ico.png",
         "sizes": "144x144",
         "type": "image/png"
     },
     {
-        "src": "images/icons/sh168ico.png",
+        "src": "img/icons/sh168ico.png",
         "sizes": "168x168",
         "type": "image/png"
     },
     {
-        "src": "images/icons/sh192ico.png",
+        "src": "img/icons/sh192ico.png",
         "sizes": "192x192",
         "type": "image/png"
     }]
