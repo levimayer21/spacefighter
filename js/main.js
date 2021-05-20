@@ -1,4 +1,4 @@
-import swURL from "sw:./sw.js"
+const swURL = require("./sw.js")
 
 if ('serviceWorker' in navigator)
 {
