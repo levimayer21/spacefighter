@@ -1,5 +1,5 @@
 const cacheName = "pwa";
-const precacheResources = ["/", 'index.php', 'scoreboard.php', 'game.php', 'css/style.css', 'css/materialize.min.css', 'js/main.js', 'js/actions.js', 'js/materialize.min.js', 'js/aos.js', 'js/jquery.js'];
+const precacheResources = ['/', '/index.php', '/scoreboard.php', '/game.php', '/css/style.css', '/css/materialize.min.css', '/js/main.js', '/js/actions.js', '/js/materialize.min.js', '/js/aos.js', '/js/jquery.js'];
 
 self.addEventListener("install", 
 (event) =>
