@@ -77,11 +77,6 @@ main
     color: white;
 }
 
-#floatingPlanet
-{
-    animation: lefttoright 6s infinite;
-}
-
 #galagapic
 {
     position: absolute;
@@ -92,6 +87,7 @@ main
     animation-duration: var(--shipspeed);
     animation-iteration-count: infinite;
     animation-direction: normal;
+    animation-timing-function: linear;
 }
 
 #gameinfo.col.s12.center p
