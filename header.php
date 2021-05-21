@@ -2,7 +2,7 @@
     require "sitesettings.php";
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
     <head>
         <meta charset="UTF-8">
         <meta name="theme-color" content="#95A3B3">
