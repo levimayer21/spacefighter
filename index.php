@@ -35,7 +35,7 @@
             <div class="nooverflow">
                 <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
-                        <img id="threep" src="img/3panim/3p-enemy.png" alt="3penemy" class="responsive-img enemypic">
+                        <img id="threep" src="img/3panim/3p-enemy.gif" alt="3penemy" class="responsive-img enemypic">
                     </div>
                     <div class="col s8 m7 right-align">
                         <h4>SpaceFighter célja</h4>
