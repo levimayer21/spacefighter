@@ -69,8 +69,17 @@ main
 {
     color: white;
     font-family: "Barcade Brawl Regular";
-    font-size: 100%;
     font-weight: normal;
+}
+
+#nav-mobile h2
+{
+    font-size: 100%;
+}
+
+#nav-mobile a
+{
+    font-size: 75%;
 }
 
 #galagapic
