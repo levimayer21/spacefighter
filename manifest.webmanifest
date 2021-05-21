@@ -3,7 +3,8 @@
     "short_name": "SF",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#ccc",
+    "background_color": "#95A3B3",
+    "theme_color": "#95A3B3",
     "description": "Space against you, you against Space",
     "icons": 
     [{
@@ -29,6 +30,11 @@
     {
         "src": "img/icons/sh192ico.png",
         "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src":"img/icons/sh512ico.png",
+        "sizes": "512x521",
         "type": "image/png"
     }]
 }

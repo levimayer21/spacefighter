@@ -5,6 +5,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="theme-color" content="#95A3B3">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SpaceFighter</title>
         <meta name="title" content="SpaceFighter">
@@ -16,6 +17,7 @@
         <meta name="author" content="Mayer Levente">
         <meta name="revisit-after" content="2">
         <link rel="icon" href="img/icons/sh192ico.png">
+        <link rel="apple-touch-icon" href="img/icons/sh192ico.png">
         <link rel="stylesheet" href="css/materialize.min.css" type="text/css" media="screen,projection">
         <link rel="manifest" href="manifest.webmanifest">
         <link rel="stylesheet" href="css/aos.css" />

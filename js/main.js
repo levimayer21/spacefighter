@@ -1,4 +1,4 @@
-const swURL = "./js/sw.js"
+const swURL = "./sw.js"
 
 if ('serviceWorker' in navigator)
 {
@@ -8,7 +8,7 @@ if ('serviceWorker' in navigator)
         try
         {
             const reg = await navigator.serviceWorker.register(swURL);
-            console.log("Service worker successfully registered: " + reg);
+            //console.log("Service worker successfully registered: " + reg);
         }
         catch (err)
         {
