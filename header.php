@@ -37,7 +37,16 @@
                     </a>
                     <ul class="right hide-on-med-and-down">
                         <li><a class="white-text waves-effect waves-light" href="game.php">Játék</a></li>
-                        <li><a class="white-text waves-effect waves-light" href="scoreboard.php">Ponttáblázat</a></li>
+                        <?php
+                            if ($_SERVER["REQUEST_URI"] === "/")
+                            {
+                                echo '<li><a class="white-text waves-effect waves-light" href="scoreboard.php">Ponttáblázat</a></li>';
+                            }
+                            else
+                            {
+                                echo '<li><a class="white-text waves-effect waves-light" href="/">Főoldal</a></li>';
+                            }
+                        ?>
                     </ul>
                 </div>
             </nav>
