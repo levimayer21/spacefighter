@@ -28,7 +28,7 @@
                                 foreach($result as $item)
                                 {
                                     //$item = array_values($item);
-                                    printf("<tr><td>".$placement."</td><td>".$item['name']."</td><td>".$item['score']."</td><td>".$item['time']."</td></tr>");
+                                    printf("<tr><td>".$placement."</td><td>".strtoupper($item['name'])."</td><td>".$item['score']."</td><td>".$item['time']."</td></tr>");
                                     $placement++;
                                 }
                                 $result->close();
