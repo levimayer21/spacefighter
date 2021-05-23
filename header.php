@@ -2,7 +2,7 @@
     require "sitesettings.php";
 ?>
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="theme-color" content="#95A3B3">
@@ -36,15 +36,15 @@
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="white-text waves-effect waves-light" href="game.php">Játék</a></li>
+                        <li><a class="white-text waves-effect waves-light" href="game.php">Game</a></li>
                         <?php
                             if ($_SERVER["REQUEST_URI"] === "/")
                             {
-                                echo '<li><a class="white-text waves-effect waves-light" href="scoreboard.php">Ponttáblázat</a></li>';
+                                echo '<li><a class="white-text waves-effect waves-light" href="scoreboard.php">Scoreboard</a></li>';
                             }
                             else
                             {
-                                echo '<li><a class="white-text waves-effect waves-light" href="/">Főoldal</a></li>';
+                                echo '<li><a class="white-text waves-effect waves-light" href="/">Homepage</a></li>';
                             }
                         ?>
                     </ul>
@@ -53,7 +53,16 @@
 
             <ul id="nav-mobile" class="sidenav z-depth-3">
                 <li><h2 class="center-align">Menü</h2></li>
-                <li><a class="waves-effect waves-light" href="game.php">Játék</a></li>
-                <li><a class="waves-effect waves-light" href="scoreboard.php">Ponttáblázat</a></li>
+                <li><a class="waves-effect waves-light" href="game.php">Game</a></li>
+                <?php
+                            if ($_SERVER["REQUEST_URI"] === "/")
+                            {
+                                echo '<li><a class="waves-effect waves-light" href="scoreboard.php">Scoreboard</a></li>';
+                            }
+                            else
+                            {
+                                echo '<li><a class="waves-effect waves-light" href="/">Homepage</a></li>';
+                            }
+                ?>
             </ul>
         </header>

@@ -7,10 +7,10 @@
         <div id="content" class="container valign-wrapper">
             <table>
                 <thead>
-                    <th>Helyezés</th>
-                    <th>Név</th>
-                    <th>Pontszám</th>
-                    <th>Játékidő</th>
+                    <th>Placement</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Playtime</th>
                 </thead>
                 <tbody>
                     <?php

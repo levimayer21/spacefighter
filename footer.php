@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6 push-m6 right-align">
-                        <p>Ha hibát találnál jelezd itt: <br>
+                        <p>If you find an error, contact me at:<br>
                             <p>leventemayer1@hotmail.hu<a href="mailto: leventemayer1@hotmail.hu"><i class="small material-icons white-text center right">mail</i></a></p>
                             <p>Mayer Levente<a href="https://www.messenger.com/t/levimayer0804"><i class="small material-icons white-text right">people</i></a></p>
                         </p>
