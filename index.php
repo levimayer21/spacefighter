@@ -33,7 +33,7 @@
         </div>
         <div id="content2" class="container" style="overflow-x: visible;">
             <div class="nooverflow">
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
                     <div class="col s4 m5 center">
                         <img id="threep" src="img/3panim/3p-enemy.gif" alt="3penemy" class="responsive-img enemypic">
                     </div>
@@ -42,7 +42,7 @@
                         <p class="flow-text">Survive the waves of enemies, and be the one who gets the most points by shooting down the enemies. It won't be an easy task, because your enemies will try to hunt you down with weapons, and by trying to hit your spaceship. And I haven't mentioned the biggest challenge yet. The other Players.</p>
                     </div>
                 </div>
-                <div id="interstuff" class="row valign-wrapper" data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
+                <div id="interstuff" class="row valign-wrapper" data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
                     <div class="col s8 m7 right-align">
                         <h4>ALIENS!</h4>
                         <p class="flow-text">SpaceFighter makes the gameplay interesting by adding enemies with special ability. You can never know what kind of an alien will try to approach your ship, but you can be sure in one thing: they won't stop until they'll destroy you.</p>
@@ -51,7 +51,7 @@
                         <img src="img/Normie.png" alt="Normie" class="responsive-img enemypic">
                     </div>
                 </div>
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
                     <div class="col s4 m5 center">
                         <img src="img/Spaceshiphp.png" alt="spaceship" class="responsive-img enemypic">
                     </div>
@@ -60,7 +60,7 @@
                         <p class="flow-text">Because you can reach the game by a simple browser, you'll be able to play the game on most of the platforms, may it be PC, or Handheld device. The sound, and the graphics are the same quality on every platform.</p>
                     </div>
                 </div>            
-                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
+                <div id="interstuff" class="row valign-wrapper " data-aos="fade-left" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="bottom-bottom">
                     <div class="col s8 m7 right-align">
                         <h4>Powered by PWA</h4>
                         <p class="flow-text">You can also download the site, thanks to a modern technology called PWA or Progressive Web Application. With this you can design a site that complies to the functions of a normal website, while being able to use service workers that will manage app data, this way you can use this application like a native downloadable app. You can try it out by using the "Install" button at the top or the "Save to the Homescreen" button at the bottom if you use an Android phone.</p>
