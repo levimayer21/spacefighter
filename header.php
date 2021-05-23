@@ -57,11 +57,11 @@
                 <?php
                             if ($_SERVER["REQUEST_URI"] === "/")
                             {
-                                echo '<li><a class="waves-effect waves-light" href="scoreboard.php">Scoreboard</a></li>';
+                                echo '<li><a class="waves-effect waves-light" href="/">Homepage</a></li>';
                             }
                             else
                             {
-                                echo '<li><a class="waves-effect waves-light" href="/">Homepage</a></li>';
+                                echo '<li><a class="waves-effect waves-light" href="scoreboard.php">Scoreboard</a></li>';
                             }
                 ?>
             </ul>
