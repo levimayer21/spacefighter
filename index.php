@@ -53,7 +53,7 @@
                 </div>
                 <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
-                        <img src="img/Spaceshiphp.pngw" alt="Normie" class="responsive-img enemypic">
+                        <img src="img/Spaceshiphp.png" alt="Normie" class="responsive-img enemypic">
                     </div>
                     <div class="col s8 m7 right-align">
                         <h4>Cross-platform</h4>
