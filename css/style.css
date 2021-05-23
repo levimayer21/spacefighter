@@ -65,21 +65,21 @@ main
     background: var(--secondary);
 }
 
-#nav-mobile h2
-{
-    font-family: "Barcade Brawl Regular";
-    font-size: 100%;
-    font-weight: normal;
-}
-
 #nav-mobile h2, #nav-mobile a
 {
     color: white;
+    font-family: "Barcade Brawl Regular";
+    font-weight: normal;
 }
 
-#floatingPlanet
+#nav-mobile h2
 {
-    animation: lefttoright 6s infinite;
+    font-size: 100%;
+}
+
+#nav-mobile a
+{
+    font-size: 75%;
 }
 
 #galagapic
@@ -92,6 +92,7 @@ main
     animation-duration: var(--shipspeed);
     animation-iteration-count: infinite;
     animation-direction: normal;
+    animation-timing-function: linear;
 }
 
 #gameinfo.col.s12.center p
