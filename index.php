@@ -53,7 +53,7 @@
                 </div>
                 <div id="interstuff" class="row valign-wrapper " data-aos="fade-right" data-aos-duration="400" data-aos-easing="ease-in-sine" data-aos-anchor-placement="center-bottom">
                     <div class="col s4 m5 center">
-                        <img src="img/Spaceshiphp.png" alt="Normie" class="responsive-img enemypic">
+                        <img src="img/Spaceshiphp.png" alt="spaceship" class="responsive-img enemypic">
                     </div>
                     <div class="col s8 m7 right-align">
                         <h4>Cross-platform</h4>
@@ -66,7 +66,7 @@
                         <p class="flow-text">You can also download the site, thanks to a modern technology called PWA or Progressive Web Application. With this you can design a site that complies to the functions of a normal website, while being able to use service workers that will manage app data, this way you can use this application like a native downloadable app. You can try it out by using the "Install" button at the top or the "Save to the Homescreen" button at the bottom if you use an Android phone.</p>
                     </div>
                     <div class="col s4 m5 center">
-                        <img src="img/pwa.png" alt="Normie" class="responsive-img enemypic">
+                        <img src="img/pwa.png" alt="pwa icon" class="responsive-img enemypic">
                     </div>
                 </div>
             </div>
